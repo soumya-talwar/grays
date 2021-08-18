@@ -1,0 +1,84 @@
+* {
+  text-align: center;
+  font-family: "Omnes";
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 2em;
+  color: #000000;
+}
+
+#landing {
+  height: 100vh;
+}
+
+#frame-container {
+  height: calc(200vh + 700px);
+}
+
+#image-container {
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  position: sticky;
+  top: 0;
+  background-size: cover;
+  background-image: url("images/frames/frame 1.jpg");
+}
+
+#text-container {
+  position: sticky;
+  top: 0;
+  padding: 25% 0;
+}
+
+#title {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 25px;
+  font-size: 32px;
+  color: #FAFAFA;
+}
+
+#subtitle {
+  color: #FAFAFA;
+}
+
+.block {
+  padding: 25% 0;
+}
+
+.line-white {
+  border-left: solid 1px #FAFAFA;
+}
+
+.line-black {
+  border-left: solid 1px #000000;
+}
+
+.question {
+  padding: 25% 0 5% 0;
+}
+
+.options {
+  padding-bottom: 25%;
+}
+
+button a {
+  text-decoration: none;
+  color: inherit;
+  line-height: inherit;
+  font-size: inherit;
+}
+
+button a:hover {
+  color: inherit;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.black-container {
+  background-color: #000000;
+}
