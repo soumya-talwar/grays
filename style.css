@@ -74,9 +74,14 @@ button a:hover {
   color: inherit;
 }
 
-button:focus {
-  outline: none;
-  box-shadow: none;
+.selected-white {
+  background-color: #FAFAFA;
+  color: #000000;
+}
+
+.selected-black {
+  background-color: #000000;
+  color: #FAFAFA;
 }
 
 .black-container {

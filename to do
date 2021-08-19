@@ -1,10 +1,18 @@
-1. go through bootstrap docs
-2. questions & answers
-3. write js script for handling answers
-4. explanation
-5. matrix
-6. conclusion
-7. glossary
-8. audio
-9. mobile-responsive
-10. host on github pages
+hide consequent questions & ask them again if user changes answers to old questions
+compile all the results
+use git
+explore atom interface
+revise sass
+explanation of the results
+go through bootstrap documentation thoroughly
+make changes if necessary
+make code concise
+mobile responsive
+2d matrices
+3d matrix
+see alternate ways of displaying 3d matrix
+conclusion
+glossary
+audio
+fonts
+hosting on github pages
