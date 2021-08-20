@@ -103,8 +103,7 @@ $(document).ready(() => {
         $("#id-ques3 a").attr("href", "#id-ques4");
         $("#id-ques4 p").text(getques(4));
         $("#id-ques4").removeClass("d-none");
-      }
-      else {
+      } else {
         $("#id-ques3 a").attr("href", "#exp-ques1");
         id = "woman";
         code.id = "010";
@@ -148,14 +147,12 @@ function findsex() {
       sex = "female";
       code.sex = "01";
     }
-  }
-  else if (sex2 == 0) {
+  } else if (sex2 == 0) {
     if (sex1 > 1) {
       sex = "male";
       code.sex = "10";
     }
-  }
-  else {
+  } else {
     result.sex = "intersex";
     if (sex1 <= 1 && sex2 <= 1)
       sex = "00";
@@ -174,43 +171,39 @@ function getques(index) {
 }
 
 function findid(answer) {
-  switch(choice) {
+  switch (choice) {
     case 0:
-      if (Boolean(answer)) {
+      if (!Boolean(answer)) {
         id = "man";
         code.id = "100";
-      }
-      else {
+      } else {
         id = "demigender (demiboy)";
         code.id = "101";
       }
       break;
     case 1:
-      if (Boolean(answer)) {
+      if (!Boolean(answer)) {
         id = "woman";
         code.id = "010";
-      }
-      else {
+      } else {
         id = "demigender (demigirl)";
         code.id = "011";
       }
       break;
     case 2:
-      if (Boolean(answer)) {
+      if (!Boolean(answer)) {
         id = "bigender";
         code.id = "110";
-      }
-      else {
+      } else {
         id = "genderfluid";
         code.id = "111";
       }
       break;
     case 3:
-      if (Boolean(answer)) {
+      if (!Boolean(answer)) {
         id = "agender/ genderlux";
         code.id = "000";
-      }
-      else {
+      } else {
         id = "genderless";
         code.id = "011";
       }
@@ -218,7 +211,7 @@ function findid(answer) {
 }
 
 function findexp(answer) {
-  switch(answer) {
+  switch (answer) {
     case 0:
       exp = "masculine";
       code.exp = "10";
