@@ -31,15 +31,19 @@
   padding: 25% 0;
 }
 
-#title {
+.heading {
   text-align: center;
   letter-spacing: 25px;
-  color: #FAFAFA;
   font-family: "Playfair Display", serif;
   font-size: 32px;
+  line-height: 2em;
 }
 
-#subtitle {
+.heading-white {
+  color: #FAFAFA;
+}
+
+.subheading-white {
   color: #FAFAFA;
 }
 

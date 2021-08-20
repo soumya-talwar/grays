@@ -43,6 +43,30 @@ var intersex = {
   ]
 };
 
+var content = {
+  "sex": {
+    "female": "A female is often associated with sex characteristics such as a vagina, a uterus, wide hips, breasts and a high-pitched voice.",
+    "male": "A male is often associated with sex characteristics such as a penis, testes, narrow hips, a prominent Adam's apple and a low-pitched voice.",
+    "intersex": "An intersex individual possesses a combination of chromosomes, gonads, hormones, internal reproductive organs, and genitals that that, together, do not fit the typical traditional definition of male or female."
+  },
+  "id": {
+    "agender": "People who identify as agender may describe themselves as genderless, genderfree, or as someone who does not know or care about gender as an internal identity or an external label.",
+    "neutrois": "Neutrois is a non-binary gender identity which is often associated with a feeling of a 'neutral' or a 'null' gender that is neither masculine, feminine, nor anything in between, but still feeling strongly gendered.",
+    "woman": "Woman is a gender identity which is part of the traditional gender binary. Women may be cisgender (assigned female at birth and identifying as women) or transgender (assigned male at birth and identifying as women).",
+    "demigender (demigirl)": "Demigender individuals have a partial connection to a certain gender. This includes the partly female identity demigirl. Also called a demiwoman or a demifemale person, demigirl is a gender identity describing someone who partially identifies as a woman.",
+    "man": "Man is a gender identity which is part of the traditional gender binary. Men may be cisgender (assigned male at birth and identifying as male) or transgender (assigned female at birth and identifying as male).",
+    "demiboy": "Demigender individuals have a partial connection to a certain gender. This includes the partly male identity demiboy. Also called a demiman or demimale person, demiboy is a gender identity describing someone who partially identifies as a man.",
+    "bigender": "Multigender is a term for anyone who experiences more than one gender identity. It can be used as a gender identity in its own right, or can be an umbrella term for other identities which fit this description. Multigender identities include bigender (two genders), pangender (all genders) and genderfluid (variable gender) among others.",
+    "genderfluid": "A genderfluid individual is a person who experiences different genders with different times, people and/or situations. They may at any time identify as a man, woman, agender, or any other non-binary identity, or even a combination of identities."
+  },
+  "exp": {
+    "non-conforming": "A non-conforming gender expression is one that does not conform to the conventional expectations of the masculine and feminine.",
+    "feminine": "A feminine expression involves a set of behaviours, presentations and roles that are culturally associated with being a woman. These attributes often include: elegance, gentleness, she/her pronouns, and clothing like dresses, skirts, heels, long hair and/or make-up.",
+    "masculine": "A masculine expression involves a set of behaviours, presentations and roles that are culturally associated with being a man. These attributes often include: physical strength, assertiveness, aggression, he/him pronouns, and clothing like trousers, shirts, and short hair.",
+    "androgynous": "Androgynous individuals express themselves in a manner that either ambiguously lies between or combines the traditional masculine and the traditional feminine."
+  }
+}
+
 $(document).ready(() => {
   $("a").each((index, link) => {
     link.addEventListener("click", event => {
@@ -135,7 +159,9 @@ $(document).ready(() => {
       $(".exp-1").removeClass("selected-white");
       $(button).addClass("selected-white");
       findexp(index);
-      console.log(exp);
+      $("#result h1").text(code.sex + "," + code.id + "," + code.exp);
+      $("#result p").text(sex + ", " + id + ", " + exp);
+      $("#result").removeClass("d-none");
     }, true);
   });
 
@@ -201,7 +227,7 @@ function findid(answer) {
       break;
     case 3:
       if (!Boolean(answer)) {
-        id = "agender/ genderlux";
+        id = "agender / genderlux";
         code.id = "000";
       } else {
         id = "genderless";
