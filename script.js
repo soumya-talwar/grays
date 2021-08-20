@@ -2,7 +2,6 @@ var sex, id, exp;
 var code = {};
 var sex1, sex2, choice;
 var trans = false;
-var ques = ["sex-ques2", "id-ques1", "id-ques2", "id-ques3", "id-ques4", "id-ques5"];
 
 var female = {
   1: "Have you felt uncomfortable in your body because of the suggestion it makes about your gender—your stature / voice / shape / genitalia / etc?",
@@ -53,10 +52,10 @@ var content = {
     "agender": "People who identify as agender may describe themselves as genderless, genderfree, or as someone who does not know or care about gender as an internal identity or an external label.",
     "neutrois": "Neutrois is a non-binary gender identity which is often associated with a feeling of a 'neutral' or a 'null' gender that is neither masculine, feminine, nor anything in between, but still feeling strongly gendered.",
     "woman": "Woman is a gender identity which is part of the traditional gender binary. Women may be cisgender (assigned female at birth and identifying as women) or transgender (assigned male at birth and identifying as women).",
-    "demigender (demigirl)": "Demigender individuals have a partial connection to a certain gender. This includes the partly female identity demigirl. Also called a demiwoman or a demifemale person, demigirl is a gender identity describing someone who partially identifies as a woman.",
+    "demigirl": "Demigender individuals have a partial connection to a certain gender. This includes the partly female identity demigirl. Also called a demiwoman or a demifemale person, demigirl is a gender identity describing someone who partially identifies as a woman.",
     "man": "Man is a gender identity which is part of the traditional gender binary. Men may be cisgender (assigned male at birth and identifying as male) or transgender (assigned female at birth and identifying as male).",
     "demiboy": "Demigender individuals have a partial connection to a certain gender. This includes the partly male identity demiboy. Also called a demiman or demimale person, demiboy is a gender identity describing someone who partially identifies as a man.",
-    "bigender": "Multigender is a term for anyone who experiences more than one gender identity. It can be used as a gender identity in its own right, or can be an umbrella term for other identities which fit this description. Multigender identities include bigender (two genders), pangender (all genders) and genderfluid (variable gender) among others.",
+    "multigender": "Multigender is a term for anyone who experiences more than one gender identity. It can be used as a gender identity in its own right, or can be an umbrella term for other identities which fit this description. Multigender identities include bigender (two genders), pangender (all genders) and genderfluid (variable gender) among others.",
     "genderfluid": "A genderfluid individual is a person who experiences different genders with different times, people and/or situations. They may at any time identify as a man, woman, agender, or any other non-binary identity, or even a combination of identities."
   },
   "exp": {
@@ -160,7 +159,13 @@ $(document).ready(() => {
       $(button).addClass("selected-white");
       findexp(index);
       $("#result h1").text(code.sex + "," + code.id + "," + code.exp);
-      $("#result p").text(sex + ", " + id + ", " + exp);
+      $("#result p").eq(1).text(sex + ", " + id + ", " + exp);
+      let text1 = "<u>biological sex : " + code.sex + " (" + sex + ")</u><br><br>" + content.sex[sex];
+      $("#result li").eq(0).html(text1);
+      let text2 = "<u>gender identity : " + code.id + " (" + id + ")</u><br><br>" + content.id[id];
+      $("#result li").eq(1).html(text2);
+      let text3 = "<u>gender expression : " + code.exp + " (" + exp + ")</u><br><br>" + content.exp[exp];
+      $("#result li").eq(2).html(text3);
       $("#result").removeClass("d-none");
     }, true);
   });
@@ -199,26 +204,26 @@ function getques(index) {
 function findid(answer) {
   switch (choice) {
     case 0:
-      if (!Boolean(answer)) {
+      if (Boolean(answer)) {
         id = "man";
         code.id = "100";
       } else {
-        id = "demigender (demiboy)";
+        id = "demiboy";
         code.id = "101";
       }
       break;
     case 1:
-      if (!Boolean(answer)) {
+      if (Boolean(answer)) {
         id = "woman";
         code.id = "010";
       } else {
-        id = "demigender (demigirl)";
+        id = "demigirl";
         code.id = "011";
       }
       break;
     case 2:
-      if (!Boolean(answer)) {
-        id = "bigender";
+      if (Boolean(answer)) {
+        id = "multigender";
         code.id = "110";
       } else {
         id = "genderfluid";
@@ -226,11 +231,11 @@ function findid(answer) {
       }
       break;
     case 3:
-      if (!Boolean(answer)) {
-        id = "agender / genderlux";
+      if (Boolean(answer)) {
+        id = "agender";
         code.id = "000";
       } else {
-        id = "genderless";
+        id = "neutrois";
         code.id = "011";
       }
   }

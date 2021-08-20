@@ -59,8 +59,12 @@
   border-left: solid 1px #000000;
 }
 
-.question {
+.block2 {
   padding: 25% 0 5% 0;
+}
+
+.block3 {
+  padding: 75% 0 5% 0;
 }
 
 .options {
@@ -90,4 +94,8 @@ button a:hover {
 
 .black-container {
   background-color: #000000;
+}
+
+.list {
+  padding: 5% 0;
 }
