@@ -100,7 +100,7 @@ var content = {
     "man": "Man is a gender identity which is part of the traditional gender binary. Men may be cisgender (assigned male at birth and identifying as male) or transgender (assigned female at birth and identifying as male).",
     "demiboy": "Demigender individuals have a partial connection to a certain gender. This includes the partly male identity demiboy. Also called a demiman or demimale person, demiboy is a gender identity describing someone who partially identifies as a man.",
     "multigender": "Multigender is a term for anyone who experiences more than one gender identity. It can be used as a gender identity in its own right, or can be an umbrella term for other identities which fit this description. Multigender identities include bigender (two genders), pangender (all genders) and genderfluid (variable gender) among others.",
-    "genderfluid": "A genderfluid individual is a person who experiences different genders with different times, people and/or situations. They may at any time identify as a man, woman, agender, or any other non-binary identity, or even a combination of identities."
+    "genderfluid": "A genderfluid individual is a person who experiences different genders at different times, with different people and/or situations. They may at any time identify as a man, woman, agender, or any other non-binary identity, or even a combination of identities."
   },
   "exp": {
     "non-conforming": "A non-conforming gender expression is one that does not conform to the conventional expectations of the masculine and feminine.",
