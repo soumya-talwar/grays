@@ -1,8 +1,4 @@
-go through bootstrap documentation
-make changes if necessary
-make code concise
 check if buttons & links can be reversed
-mobile responsive
 2d matrices
 3d matrix
 see alternate ways of displaying 3d matrix
@@ -10,4 +6,5 @@ conclusion
 glossary
 audio
 fonts
-hosting on github pages
+sass
+github pages

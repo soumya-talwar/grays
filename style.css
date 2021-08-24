@@ -2,7 +2,7 @@
   text-align: center;
   letter-spacing: 2px;
   color: #000000;
-  font-family: "Omnes";
+  font-family: omnes, sans-serif;
   font-size: 14px;
   line-height: 2em;
 }
@@ -108,4 +108,9 @@ button a:hover {
   .line-black {
     border-left: solid 1px #000000;
   }
+}
+
+@font-face {
+  font-family: omnes;
+  src: url(fonts/omnes.ttf);
 }
