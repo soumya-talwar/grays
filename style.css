@@ -34,7 +34,7 @@
 .heading {
   text-align: center;
   letter-spacing: 25px;
-  font-family: "Playfair Display", serif;
+  font-family: playfair-display, serif;
   font-size: 32px;
   line-height: 2em;
 }
@@ -117,4 +117,9 @@ button a:hover {
 @font-face {
   font-family: omnes;
   src: url(fonts/omnes.ttf);
+}
+
+@font-face {
+  font-family: playfair-display;
+  src: url(fonts/playfair-display.ttf);
 }
