@@ -52,11 +52,11 @@
 }
 
 .line-white {
-  border-left: solid 1px #FAFAFA;
+  border-left: solid 1px #000000;
 }
 
 .line-black {
-  border-left: solid 1px #000000;
+  border-left: solid 1px #FAFAFA;
 }
 
 .block2 {
@@ -98,4 +98,14 @@ button a:hover {
 
 .list {
   padding: 5% 0;
+}
+
+@media (min-width: 991.98px) {
+  .line-white {
+    border-left: solid 1px #FAFAFA;
+  }
+
+  .line-black {
+    border-left: solid 1px #000000;
+  }
 }

@@ -1,356 +1,368 @@
-<DOCTYPE! html>
-  <html lang="en">
+<!doctype html>
+<html lang="en">
 
-    <head>
-      <meta charset="utf-8">
-      <title>grays</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <title>grays</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 
-      <script src="https://kit.fontawesome.com/715dc2f277.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/715dc2f277.js" crossorigin="anonymous"></script>
 
-      <link rel="stylesheet" type="text/css" href="style.css">
-      <script src="script.js"></script>
-    </head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+  </head>
 
-    <body>
-      <link rel="preload" as="image" href="images/frames/frame 1.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 2.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 3.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 4.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 5.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 6.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 7.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 8.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 9.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 10.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 11.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 12.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 13.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 14.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 15.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 16.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 17.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 18.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 19.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 20.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 21.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 22.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 23.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 24.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 25.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 26.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 27.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 28.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 29.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 30.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 31.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 32.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 33.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 34.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 35.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 36.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 37.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 38.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 39.jpg">
-      <link rel="preload" as="image" href="images/frames/frame 40.jpg">
-      <audio id="music">
-        <source src="audio/in the androgynous dark.mp3" type="audio/mp3">
-      </audio>
-      <div class="container-fluid">
-        <div class="d-flex flex-column justify-content-center" id="landing">
-          <p>scroll to begin</p>
-          <p><i id="play-button" class="fas fa-play"></i></p>
-          <p>play music</p>
-        </div>
+  <body>
+    <link rel="preload" as="image" href="images/frames/frame 1.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 2.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 3.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 4.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 5.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 6.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 7.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 8.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 9.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 10.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 11.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 12.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 13.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 14.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 15.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 16.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 17.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 18.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 19.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 20.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 21.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 22.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 23.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 24.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 25.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 26.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 27.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 28.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 29.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 30.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 31.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 32.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 33.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 34.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 35.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 36.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 37.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 38.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 39.jpg">
+    <link rel="preload" as="image" href="images/frames/frame 40.jpg">
+    <audio id="music">
+      <source src="audio/in the androgynous dark.mp3" type="audio/mp3">
+    </audio>
 
-        <div class="d-flex flex-column" id="frame-container">
-          <div id="image-container"></div>
-          <div id="text-container">
-            <h1 class="heading heading-white">Grays</h1>
-            <p class="subheading-white">An advocacy of the non-binary</p>
-          </div>
-        </div>
+    <div class="container-fluid d-none d-lg-block">
+      <div class="d-flex flex-column justify-content-center" id="landing">
+        <p>scroll to begin</p>
+        <p><i id="play-button" class="fas fa-play"></i></p>
+        <p>play music</p>
+      </div>
+    </div>
 
-        <div class="d-flex flex-column align-items-center">
-          <div class="col-4">
-            <p class="block">
-              "We are in charge of our perception of reality and that we hold the means to create, reinforce, or alter that perceived reality."<br><br>
-              -Lori Girshwick, author of "Transgender Voices"
-            </p>
-            <p class="block">
-              Is gender truly as binary as we are made to believe? That we are either a man or a woman?<br><br><br>
-              Can you be a man and a woman at the same time? Can you be none at all?
-            </p>
-            <p class="block">
-              Gender is a socially constructed understanding that forms the basis for shared assumptions about reality.<br><br><br>
-              Developed and institutionalised, the gender binary has become widely accepted as "natural" and made into tradition by the society.
-            </p>
-            <p class="block">
-              But where do you fit in all this?
-            </p>
-          </div>
+    <div class="container-fluid d-lg-none">
+      <div class="d-flex flex-column justify-content-center" id="landing">
+        <h1 class="heading">Grays</h1>
+        <p>An advocacy of the non-binary</p>
+        <p><i id="play-button" class="fas fa-play"></i></p>
+        <p>play music</p>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="d-flex flex-column d-none d-lg-block" id="frame-container">
+        <div id="image-container"></div>
+        <div id="text-container">
+          <h1 class="heading heading-white">Grays</h1>
+          <p class="subheading-white">An advocacy of the non-binary</p>
         </div>
       </div>
 
-      <div class="container-fluid black-container">
-        <div class="d-flex flex-column align-items-center">
-          <div class="col-4">
-            <p class="block text-light">
-              To start with, sex and gender are two separate concepts. Sex refers to your biological anatomy, and gender is an inner sense of identity that is subjective and personal to each individual.<br><br><br>
-              To help you understand a little more about gender, and about yourself, let me ask you a few block2s.<br><br><br>
-              Please answer them as accurately as you can.
-            </p>
+      <div class="d-flex flex-column align-items-center">
+        <div class="col-10 col-lg-4">
+          <p class="block">
+            "We are in charge of our perception of reality and that we hold the means to create, reinforce, or alter that perceived reality."<br><br>
+            -Lori Girshwick, author of "Transgender Voices"
+          </p>
+          <p class="block">
+            Is gender truly as binary as we are made to believe? That we are either a man or a woman?<br><br><br>
+            Can you be a man and a woman at the same time? Can you be none at all?
+          </p>
+          <p class="block">
+            Gender is a socially constructed understanding that forms the basis for shared assumptions about reality.<br><br><br>
+            Developed and institutionalised, the gender binary has become widely accepted as "natural" and made into tradition by the society.
+          </p>
+          <p class="block">
+            But where do you fit in all this?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid black-container">
+      <div class="d-flex flex-column align-items-center">
+        <div class="col-10 col-lg-4">
+          <p class="block text-light">
+            To start with, sex and gender are two separate concepts. Sex refers to your biological anatomy, and gender is an inner sense of identity that is subjective and personal to each individual.<br><br><br>
+            To help you understand a little more about gender, and about yourself, let me ask you a few block2s.<br><br><br>
+            Please answer them as accurately as you can.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid black-container">
+      <div class="row">
+        <div class="col-1 col-lg-2"></div>
+        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+          <small class="text-light pe-3 ms-auto">biological sex<br>#1</small>
+        </div>
+        <div class="col-10 col-lg-4 line-white">
+          <p class="block2 text-light px-3">
+            How masculine is the body that you were born in?
+          </p>
+          <div class="d-flex flex-row justify-content-center gap-3 options">
+            <button class="btn btn-sm btn-outline-light px-3 sex-male"><a href="#sex-ques2">0.0</a></button>
+            <button class="btn btn-sm btn-outline-light px-3 sex-male"><a href="#sex-ques2">0.25</a></button>
+            <button class="btn btn-sm btn-outline-light px-3 sex-male"><a href="#sex-ques2">0.5</a></button>
+            <button class="btn btn-sm btn-outline-light px-3 sex-male"><a href="#sex-ques2">1.0</a></button>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container-fluid black-container">
-        <div class="row">
-          <div class="col-2"></div>
-          <div class="col-2 d-flex flex-column justify-content-center">
-            <small class="text-light pe-3 ms-auto">biological sex<br>#1</small>
-          </div>
-          <div class="col-4 line-white">
-            <p class="block2 text-light px-3">
-              How masculine is the body that you were born in?
-            </p>
-            <div class="d-flex flex-row justify-content-center gap-3 options">
-              <button class="btn btn-sm btn-outline-light px-3 sex-male"><a href="#sex-ques2">0.0</a></button>
-              <button class="btn btn-sm btn-outline-light px-3 sex-male"><a href="#sex-ques2">0.25</a></button>
-              <button class="btn btn-sm btn-outline-light px-3 sex-male"><a href="#sex-ques2">0.5</a></button>
-              <button class="btn btn-sm btn-outline-light px-3 sex-male"><a href="#sex-ques2">1.0</a></button>
-            </div>
+    <div class="container-fluid d-none" id="sex-ques2">
+      <div class="row">
+        <div class="col-1 col-lg-2"></div>
+        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+          <small class="pe-3 ms-auto">biological sex<br>#2</small>
+        </div>
+        <div class="col-10 col-lg-4 line-black">
+          <p class="block2 px-3">
+            How feminine is the body that you were born in?
+          </p>
+          <div class="d-flex flex-row justify-content-center gap-3 options">
+            <button class="btn btn-sm btn-outline-dark px-3 sex-female"><a href="#id-ques1">0.0</a></button>
+            <button class="btn btn-sm btn-outline-dark px-3 sex-female"><a href="#id-ques1">0.25</a></button>
+            <button class="btn btn-sm btn-outline-dark px-3 sex-female"><a href="#id-ques1">0.5</a></button>
+            <button class="btn btn-sm btn-outline-dark px-3 sex-female"><a href="#id-ques1">1.0</a></button>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container-fluid d-none" id="sex-ques2">
-        <div class="row">
-          <div class="col-2"></div>
-          <div class="col-2 d-flex flex-column justify-content-center">
-            <small class="pe-3 ms-auto">biological sex<br>#2</small>
-          </div>
-          <div class="col-4 line-black">
-            <p class="block2 px-3">
-              How feminine is the body that you were born in?
-            </p>
-            <div class="d-flex flex-row justify-content-center gap-3 options">
-              <button class="btn btn-sm btn-outline-dark px-3 sex-female"><a href="#id-ques1">0.0</a></button>
-              <button class="btn btn-sm btn-outline-dark px-3 sex-female"><a href="#id-ques1">0.25</a></button>
-              <button class="btn btn-sm btn-outline-dark px-3 sex-female"><a href="#id-ques1">0.5</a></button>
-              <button class="btn btn-sm btn-outline-dark px-3 sex-female"><a href="#id-ques1">1.0</a></button>
-            </div>
+    <div class="container-fluid d-none" id="id-ques1">
+      <div class="row">
+        <div class="col-1 col-lg-2"></div>
+        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+          <small class="pe-3 ms-auto">gender identity<br>#1</small>
+        </div>
+        <div class="col-10 col-lg-4 line-black">
+          <p class="block2 px-3">
+
+          </p>
+          <div class="d-flex flex-row justify-content-center gap-3 options">
+            <button class="btn btn-sm btn-outline-dark px-3 id-1"><a href="#id-ques2">yes / sometimes</a></button>
+            <button class="btn btn-sm btn-outline-dark px-3 id-1"><a href="#id-ques2">no</a></button>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container-fluid d-none" id="id-ques1">
-        <div class="row">
-          <div class="col-2"></div>
-          <div class="col-2 d-flex flex-column justify-content-center">
-            <small class="pe-3 ms-auto">gender identity<br>#1</small>
-          </div>
-          <div class="col-4 line-black">
-            <p class="block2 px-3">
+    <div class="container-fluid d-none" id="id-ques2">
+      <div class="row">
+        <div class="col-1 col-lg-2"></div>
+        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+          <small class="pe-3 ms-auto">gender identity<br>#2</small>
+        </div>
+        <div class="col-10 col-lg-4 line-black">
+          <p class="block2 px-3">
 
-            </p>
-            <div class="d-flex flex-row justify-content-center gap-3 options">
-              <button class="btn btn-sm btn-outline-dark px-3 id-1"><a href="#id-ques2">yes / sometimes</a></button>
-              <button class="btn btn-sm btn-outline-dark px-3 id-1"><a href="#id-ques2">no</a></button>
-            </div>
+          </p>
+          <div class="d-flex flex-row justify-content-center gap-3 options">
+            <button class="btn btn-sm btn-outline-dark px-3 id-2"><a href="#id-ques3">yes / sometimes</a></button>
+            <button class="btn btn-sm btn-outline-dark px-3 id-2"><a href="#id-ques3">no</a></button>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container-fluid d-none" id="id-ques2">
-        <div class="row">
-          <div class="col-2"></div>
-          <div class="col-2 d-flex flex-column justify-content-center">
-            <small class="pe-3 ms-auto">gender identity<br>#2</small>
-          </div>
-          <div class="col-4 line-black">
-            <p class="block2 px-3">
+    <div class="container-fluid d-none" id="id-ques3">
+      <div class="row">
+        <div class="col-1 col-lg-2"></div>
+        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+          <small class="pe-3 ms-auto">gender identity<br>#3</small>
+        </div>
+        <div class="col-10 col-lg-4 line-black">
+          <p class="block2 px-3">
 
-            </p>
-            <div class="d-flex flex-row justify-content-center gap-3 options">
-              <button class="btn btn-sm btn-outline-dark px-3 id-2"><a href="#id-ques3">yes / sometimes</a></button>
-              <button class="btn btn-sm btn-outline-dark px-3 id-2"><a href="#id-ques3">no</a></button>
-            </div>
+          </p>
+          <div class="d-flex flex-row justify-content-center gap-3 options">
+            <button class="btn btn-sm btn-outline-dark px-3 id-3"><a href="#id-ques4">yes / sometimes</a></button>
+            <button class="btn btn-sm btn-outline-dark px-3 id-3"><a href="#id-ques4">no</a></button>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container-fluid d-none" id="id-ques3">
-        <div class="row">
-          <div class="col-2"></div>
-          <div class="col-2 d-flex flex-column justify-content-center">
-            <small class="pe-3 ms-auto">gender identity<br>#3</small>
-          </div>
-          <div class="col-4 line-black">
-            <p class="block2 px-3">
+    <div class="container-fluid d-none" id="id-ques4">
+      <div class="row">
+        <div class="col-1 col-lg-2"></div>
+        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+          <small class="pe-3 ms-auto">gender identity<br>#4</small>
+        </div>
+        <div class="col-10 col-lg-4 line-black">
+          <p class="block2 px-3">
 
-            </p>
-            <div class="d-flex flex-row justify-content-center gap-3 options">
-              <button class="btn btn-sm btn-outline-dark px-3 id-3"><a href="#id-ques4">yes / sometimes</a></button>
-              <button class="btn btn-sm btn-outline-dark px-3 id-3"><a href="#id-ques4">no</a></button>
-            </div>
+          </p>
+          <div class="d-flex flex-row justify-content-center gap-3 options">
+            <button class="btn btn-sm btn-outline-dark px-3 id-4"><a href="#id-ques5">masculine</a></button>
+            <button class="btn btn-sm btn-outline-dark px-3 id-4"><a href="#id-ques5">feminine</a></button>
+            <button class="btn btn-sm btn-outline-dark px-3 id-4"><a href="#id-ques5">both</a></button>
+            <button class="btn btn-sm btn-outline-dark px-3 id-4"><a href="#id-ques5">neither</a></button>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container-fluid d-none" id="id-ques4">
-        <div class="row">
-          <div class="col-2"></div>
-          <div class="col-2 d-flex flex-column justify-content-center">
-            <small class="pe-3 ms-auto">gender identity<br>#4</small>
-          </div>
-          <div class="col-4 line-black">
-            <p class="block2 px-3">
+    <div class="container-fluid d-none" id="id-ques5">
+      <div class="row">
+        <div class="col-1 col-lg-2"></div>
+        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+          <small class="pe-3 ms-auto">gender identity<br>#5</small>
+        </div>
+        <div class="col-10 col-lg-4 line-black">
+          <p class="block2 px-3">
 
-            </p>
-            <div class="d-flex flex-row justify-content-center gap-3 options">
-              <button class="btn btn-sm btn-outline-dark px-3 id-4"><a href="#id-ques5">masculine</a></button>
-              <button class="btn btn-sm btn-outline-dark px-3 id-4"><a href="#id-ques5">feminine</a></button>
-              <button class="btn btn-sm btn-outline-dark px-3 id-4"><a href="#id-ques5">both</a></button>
-              <button class="btn btn-sm btn-outline-dark px-3 id-4"><a href="#id-ques5">neither</a></button>
-            </div>
+          </p>
+          <div class="d-flex flex-row justify-content-center gap-3 options">
+            <button class="btn btn-sm btn-outline-dark px-3 id-5"><a href="#exp-ques1">yes</a></button>
+            <button class="btn btn-sm btn-outline-dark px-3 id-5"><a href="#exp-ques1">no</a></button>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container-fluid d-none" id="id-ques5">
-        <div class="row">
-          <div class="col-2"></div>
-          <div class="col-2 d-flex flex-column justify-content-center">
-            <small class="pe-3 ms-auto">gender identity<br>#5</small>
-          </div>
-          <div class="col-4 line-black">
-            <p class="block2 px-3">
-
-            </p>
-            <div class="d-flex flex-row justify-content-center gap-3 options">
-              <button class="btn btn-sm btn-outline-dark px-3 id-5"><a href="#exp-ques1">yes</a></button>
-              <button class="btn btn-sm btn-outline-dark px-3 id-5"><a href="#exp-ques1">no</a></button>
-            </div>
+    <div class="container-fluid black-container d-none" id="exp-ques1">
+      <div class="row">
+        <div class="col-1 col-lg-2"></div>
+        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+          <small class="pe-3 ms-auto text-light">gender expression<br>#1</small>
+        </div>
+        <div class="col-10 col-lg-4 line-white">
+          <p class="block2 text-light px-3">
+            In an ideal safe environment, how would you choose to express your identity? Think of: speech / clothing / grooming / etc.
+          </p>
+          <div class="d-flex flex-row justify-content-center gap-3 options">
+            <button class="btn btn-sm btn-outline-light px-3 exp-1"><a href="#result">masculine</a></button>
+            <button class="btn btn-sm btn-outline-light px-3 exp-1"><a href="#result">feminine</a></button>
+            <button class="btn btn-sm btn-outline-light px-3 exp-1"><a href="#result">both</a></button>
+            <button class="btn btn-sm btn-outline-light px-3 exp-1"><a href="#result">neither</a></button>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container-fluid black-container d-none" id="exp-ques1">
-        <div class="row">
-          <div class="col-2"></div>
-          <div class="col-2 d-flex flex-column justify-content-center">
-            <small class="pe-3 ms-auto text-light">gender expression<br>#1</small>
-          </div>
-          <div class="col-4 line-white">
-            <p class="block2 text-light px-3">
-              In an ideal safe environment, how would you choose to express your identity? Think of: speech / clothing / grooming / etc.
-            </p>
-            <div class="d-flex flex-row justify-content-center gap-3 options">
-              <button class="btn btn-sm btn-outline-light px-3 exp-1"><a href="#result">masculine</a></button>
-              <button class="btn btn-sm btn-outline-light px-3 exp-1"><a href="#result">feminine</a></button>
-              <button class="btn btn-sm btn-outline-light px-3 exp-1"><a href="#result">both</a></button>
-              <button class="btn btn-sm btn-outline-light px-3 exp-1"><a href="#result">neither</a></button>
-            </div>
-          </div>
+    <div class="container-fluid d-none" id="result">
+      <div class="d-flex flex-column align-items-center">
+        <div class="col-10 col-lg-4">
+          <p class="block2">your result: </p>
+          <h1 class="heading"></h1>
+          <p></p>
+          <li class="list"></li>
+          <li class="list"></li>
+          <li class="list"></li>
+          <p class="block3">
+            Your results show you a 7-digit combination of 0’s and 1’s that represents your likely: <u>biological sex</u> (anatomical attributes), <u>gender identity</u> (internal sense of gender), and <u>gender expression</u> (external
+            manifestation of that identity).<br><br><br>
+            We’ve all been told that there are only two options: man or woman, but you must've gotten a fair idea by now that those aren’t the only options.<br><br><br>
+            There’s an amalgam of multiple identities and expressions that give rise to diversity and several possibilities on the wide spectrums of sex and gender.
+          </p>
+          <p class="block">
+            If the first digit stood for the presence of male biological traits in the body, and the second digit stood for the presence of female biological traits in the body (with the value 1 signifying yes or true, and the value 0 signifying no
+            or false) we can map four possibilities on a chart like this:
+          </p>
         </div>
       </div>
+    </div>
 
-      <div class="container-fluid d-none" id="result">
-        <div class="d-flex flex-column align-items-center">
-          <div class="col-4">
-            <p class="block2">your result: </p>
-            <h1 class="heading"></h1>
-            <p></p>
-            <li class="list"></li>
-            <li class="list"></li>
-            <li class="list"></li>
-            <p class="block3">
-              Your results show you a 7-digit combination of 0’s and 1’s that represents your likely: <u>biological sex</u> (anatomical attributes), <u>gender identity</u> (internal sense of gender), and <u>gender expression</u> (external
-              manifestation of that identity).<br><br><br>
-              We’ve all been told that there are only two options: man or woman, but you must've gotten a fair idea by now that those aren’t the only options.<br><br><br>
-              There’s an amalgam of multiple identities and expressions that give rise to diversity and several possibilities on the wide spectrums of sex and gender.
-            </p>
-            <p class="block">
-              If the first digit stood for the presence of male biological traits in the body, and the second digit stood for the presence of female biological traits in the body (with the value 1 signifying yes or true, and the value 0 signifying no
-              or false) we can map four possibilities on a chart like this:
-            </p>
-          </div>
-        </div>
+    <script>
+      let play = false;
+      const frames = {
+        1: "images/frames/frame 1.jpg",
+        2: "images/frames/frame 2.jpg",
+        3: "images/frames/frame 3.jpg",
+        4: "images/frames/frame 4.jpg",
+        5: "images/frames/frame 5.jpg",
+        6: "images/frames/frame 6.jpg",
+        7: "images/frames/frame 7.jpg",
+        8: "images/frames/frame 8.jpg",
+        9: "images/frames/frame 9.jpg",
+        10: "images/frames/frame 10.jpg",
+        11: "images/frames/frame 11.jpg",
+        12: "images/frames/frame 12.jpg",
+        13: "images/frames/frame 13.jpg",
+        14: "images/frames/frame 14.jpg",
+        15: "images/frames/frame 15.jpg",
+        16: "images/frames/frame 16.jpg",
+        17: "images/frames/frame 17.jpg",
+        18: "images/frames/frame 18.jpg",
+        19: "images/frames/frame 19.jpg",
+        20: "images/frames/frame 20.jpg",
+        21: "images/frames/frame 21.jpg",
+        22: "images/frames/frame 22.jpg",
+        23: "images/frames/frame 23.jpg",
+        24: "images/frames/frame 24.jpg",
+        25: "images/frames/frame 25.jpg",
+        26: "images/frames/frame 26.jpg",
+        27: "images/frames/frame 27.jpg",
+        28: "images/frames/frame 28.jpg",
+        29: "images/frames/frame 29.jpg",
+        30: "images/frames/frame 30.jpg",
+        31: "images/frames/frame 31.jpg",
+        32: "images/frames/frame 32.jpg",
+        33: "images/frames/frame 33.jpg",
+        34: "images/frames/frame 34.jpg",
+        35: "images/frames/frame 35.jpg",
+        36: "images/frames/frame 36.jpg",
+        37: "images/frames/frame 37.jpg",
+        38: "images/frames/frame 38.jpg",
+        39: "images/frames/frame 39.jpg",
+        40: "images/frames/frame 40.jpg"
+      };
 
-        <script>
-          let play = false;
-          const frames = {
-            1: "images/frames/frame 1.jpg",
-            2: "images/frames/frame 2.jpg",
-            3: "images/frames/frame 3.jpg",
-            4: "images/frames/frame 4.jpg",
-            5: "images/frames/frame 5.jpg",
-            6: "images/frames/frame 6.jpg",
-            7: "images/frames/frame 7.jpg",
-            8: "images/frames/frame 8.jpg",
-            9: "images/frames/frame 9.jpg",
-            10: "images/frames/frame 10.jpg",
-            11: "images/frames/frame 11.jpg",
-            12: "images/frames/frame 12.jpg",
-            13: "images/frames/frame 13.jpg",
-            14: "images/frames/frame 14.jpg",
-            15: "images/frames/frame 15.jpg",
-            16: "images/frames/frame 16.jpg",
-            17: "images/frames/frame 17.jpg",
-            18: "images/frames/frame 18.jpg",
-            19: "images/frames/frame 19.jpg",
-            20: "images/frames/frame 20.jpg",
-            21: "images/frames/frame 21.jpg",
-            22: "images/frames/frame 22.jpg",
-            23: "images/frames/frame 23.jpg",
-            24: "images/frames/frame 24.jpg",
-            25: "images/frames/frame 25.jpg",
-            26: "images/frames/frame 26.jpg",
-            27: "images/frames/frame 27.jpg",
-            28: "images/frames/frame 28.jpg",
-            29: "images/frames/frame 29.jpg",
-            30: "images/frames/frame 30.jpg",
-            31: "images/frames/frame 31.jpg",
-            32: "images/frames/frame 32.jpg",
-            33: "images/frames/frame 33.jpg",
-            34: "images/frames/frame 34.jpg",
-            35: "images/frames/frame 35.jpg",
-            36: "images/frames/frame 36.jpg",
-            37: "images/frames/frame 37.jpg",
-            38: "images/frames/frame 38.jpg",
-            39: "images/frames/frame 39.jpg",
-            40: "images/frames/frame 40.jpg"
-          };
+      $(document).ready(() => {
+        $(window).scroll(() => {
+          let index = Math.min(Math.floor(window.scrollY / 50) + 1, 40);
+          let image = frames[index];
+          $("#image-container").css("background-image", `url("${image}")`);
+        });
+        let audio = document.getElementById("music");
+        let button = $("#play-button");
+        button.click(() => {
+          if (!play)
+            audio.play();
+          else
+            audio.pause();
+          play = !play;
+          button.toggleClass(["fa-play", "fa-pause"]);
+        });
+      });
+    </script>
+  </body>
 
-          $(document).ready(() => {
-            $(window).scroll(() => {
-              let index = Math.min(Math.floor(window.scrollY / 50) + 1, 40);
-              let image = frames[index];
-              $("#image-container").css("background-image", `url("${image}")`);
-            });
-            let audio = document.getElementById("music");
-            let button = $("#play-button");
-            button.click(() => {
-              if (!play)
-                audio.play();
-              else
-                audio.pause();
-              play = !play;
-              button.toggleClass(["fa-play", "fa-pause"]);
-            });
-          });
-        </script>
-
-    </body>
-
-  </html>
+</html>
