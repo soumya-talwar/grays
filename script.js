@@ -242,8 +242,11 @@ $(document).ready(() => {
     matrix.toggleClass(["d-none", "col-12", "col-lg-10"]);
   });
 
-  $("#show-matrix").click(() => $("#glossary").removeClass("d-none"));
-
+  let button3 = document.getElementById("show-glossary");
+  console.log(button3);
+  button3.addEventListener("click", event => {
+    $("#glossary").removeClass("d-none");
+  }, true);
 });
 
 function findsex() {
