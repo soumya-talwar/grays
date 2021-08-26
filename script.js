@@ -229,6 +229,11 @@ $(document).ready(() => {
      });
   });
 
+  if ($(window).width() < 992) {
+    let view = document.getElementsByTagName("Viewpoint")[0];
+    $(view).attr("position", "-1, 0, 18")
+  }
+
   let matrix = $("#matrix");
   let button2 = $("#toggle-matrix");
   button2.click(() => {
