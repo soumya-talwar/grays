@@ -64,6 +64,10 @@
 }
 
 @media (max-width: 991.98px) {
+  * {
+    font-size: 12px;
+  }
+
   .border-black, .border-white {
     border: none;
   }
