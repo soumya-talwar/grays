@@ -225,10 +225,6 @@ $(document).ready(() => {
       $("#result li").eq(0).html("<u>biological sex : " + code.sex + " (" + sex + ")</u><br><br>" + content.sex[sex]);
       $("#result li").eq(1).html("<u>gender identity : " + code.id + " (" + id + ")</u><br><br>" + content.id[id]);
       $("#result li").eq(2).html("<u>gender expression : " + code.exp + " (" + exp + ")</u><br><br>" + content.exp[exp]);
-      if ($(window).width() < 992) {
-        let view = document.getElementsByTagName("Viewpoint")[0];
-        $(view).attr("position", "-1, 0, 18")
-      }
       $("#conclusion").removeClass("d-none");
      });
   });
@@ -236,11 +232,15 @@ $(document).ready(() => {
   let matrix = $("#matrix");
   let button2 = $("#toggle-matrix");
   button2.click(() => {
-    if (matrix.hasClass("d-none"))
-      button2.text("hide matrix");
-    else
-      button2.text("show matrix");
-    matrix.toggleClass(["d-none", "col-12", "col-lg-10"]);
+    // if ($(window).width() < 992) {
+      let view = document.getElementsByTagName("Viewpoint")[0];
+      $(view).attr("position", "-1, 0, 18")
+    // }
+    // if (matrix.hasClass("d-none"))
+    //   button2.text("hide matrix");
+    // else
+    //   button2.text("show matrix");
+    // matrix.toggleClass(["d-none", "col-12", "col-lg-10"]);
   });
 
   $("#show-glossary").click(event => {
