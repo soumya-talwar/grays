@@ -128,6 +128,11 @@ $(document).ready(() => {
     button.toggleClass(["fa-play", "fa-pause"]);
   });
 
+  if ($(window).width() < 992) {
+    let view = document.getElementsByTagName("Viewpoint")[0];
+    $(view).attr("position", "-1, 0, 18");
+  }
+
   $("a").each((index, link) => {
     $(link).click(event => {
       if (link.hash !== "") {
@@ -225,10 +230,6 @@ $(document).ready(() => {
       $("#result li").eq(0).html("<u>biological sex : " + code.sex + " (" + sex + ")</u><br><br>" + content.sex[sex]);
       $("#result li").eq(1).html("<u>gender identity : " + code.id + " (" + id + ")</u><br><br>" + content.id[id]);
       $("#result li").eq(2).html("<u>gender expression : " + code.exp + " (" + exp + ")</u><br><br>" + content.exp[exp]);
-      if ($(window).width() < 992) {
-        let view = document.getElementsByTagName("Viewpoint")[0];
-        $(view).attr("position", "-1, 0, 18");
-      }
       $("#conclusion").removeClass("d-none");
      });
   });
