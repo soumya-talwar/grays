@@ -144,8 +144,8 @@ $(document).ready(() => {
   $(".sex-male").each((index, button) => {
     $(button).click(event => {
        $("#sex-ques2").removeClass("d-none");
-       $(".sex-male").removeClass("selected-white");
-       $(button).addClass("selected-white");
+       $(".sex-male").removeClass("active");
+       $(button).addClass("active");
        sex1 = index;
      });
   });
@@ -153,8 +153,8 @@ $(document).ready(() => {
   $(".sex-female").each((index, button) => {
     $(button).click(event => {
       $("#id-ques1").removeClass("d-none");
-      $(".sex-female").removeClass("selected-black");
-      $(button).addClass("selected-black");
+      $(".sex-female").removeClass("active");
+      $(button).addClass("active");
       sex2 = index;
       findsex();
       $("#id-ques1 p").text(getques(1));
@@ -166,23 +166,23 @@ $(document).ready(() => {
   $(".id-1").each((index, button) => {
     $(button).click(event => {
       $("#id-ques2").removeClass("d-none");
-      $(".id-1").removeClass("selected-black");
-      $(button).addClass("selected-black");
+      $(".id-1").removeClass("active");
+      $(button).addClass("active");
      });
   });
 
   $(".id-2").each((index, button) => {
     $(button).click(event => {
       $("#id-ques3").removeClass("d-none");
-      $(".id-2").removeClass("selected-black");
-      $(button).addClass("selected-black");
+      $(".id-2").removeClass("active");
+      $(button).addClass("active");
      });
   });
 
   $(".id-3").each((index, button) => {
     $(button).click(event => {
-      $(".id-3").removeClass("selected-black");
-      $(button).addClass("selected-black");
+      $(".id-3").removeClass("active");
+      $(button).addClass("active");
       if (index == 0) {
         $("#id-ques3 a").attr("href", "#id-ques4");
         $("#id-ques4 p").text(getques(4));
@@ -197,8 +197,8 @@ $(document).ready(() => {
 
   $(".id-4").each((index, button) => {
     $(button).click(event => {
-      $(".id-4").removeClass("selected-black");
-      $(button).addClass("selected-black");
+      $(".id-4").removeClass("active");
+      $(button).addClass("active");
       choice = index;
       $("#id-ques5 p").text(getques(5)[choice]);
       $("#id-ques5").removeClass("d-none");
@@ -207,8 +207,8 @@ $(document).ready(() => {
 
   $(".id-5").each((index, button) => {
     $(button).click(event => {
-      $(".id-5").removeClass("selected-black");
-      $(button).addClass("selected-black");
+      $(".id-5").removeClass("active");
+      $(button).addClass("active");
       findid(index);
       $("#exp-ques1").removeClass("d-none");
      });
@@ -216,8 +216,8 @@ $(document).ready(() => {
 
   $(".exp-1").each((index, button) => {
     $(button).click(event => {
-      $(".exp-1").removeClass("selected-white");
-      $(button).addClass("selected-white");
+      $(".exp-1").removeClass("active");
+      $(button).addClass("active");
       $("#result").removeClass("d-none");
       findexp(index);
       $("#result h1").text(code.sex + "," + code.id + "," + code.exp);
@@ -241,7 +241,6 @@ $(document).ready(() => {
 
   $("#show-glossary").click(event => {
     $("#glossary").removeClass("d-none");
-    $("#scroll-top").removeClass("d-none");
    });
 });
 

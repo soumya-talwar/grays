@@ -47,22 +47,30 @@
   padding: 10% 0;
 }
 
-.btn:focus {
-  box-shadow: none;
-}
-
-.selected-white {
-  color: #000000;
-  background-color: #FAFAFA;
-}
-
-.selected-black {
-  color: #FAFAFA;
-  background-color: #000000;
-}
-
 .black-container {
   background-color: #000000;
+}
+
+.btn:focus, .btn:active {
+  box-shadow: none !important;
+}
+
+.border-black {
+  border-left: solid 1px #000000;
+}
+
+.border-white {
+  border-left: solid 1px #FAFAFA;
+}
+
+@media (max-width: 991.98px) {
+  .border-black, .border-white {
+    border: none;
+  }
+}
+
+#toggle-matrix {
+  cursor: pointer;
 }
 
 @font-face {
