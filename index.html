@@ -60,38 +60,32 @@
     <link rel="preload" as="image" href="images/frames/frame 38.jpg">
     <link rel="preload" as="image" href="images/frames/frame 39.jpg">
     <link rel="preload" as="image" href="images/frames/frame 40.jpg">
+
     <audio id="music">
       <source src="audio/in the androgynous dark.mp3" type="audio/mp3">
     </audio>
 
-    <div class="container-fluid d-none d-lg-block">
+    <div class="container-fluid">
       <div class="d-flex flex-column justify-content-center" id="landing">
-        <p>scroll to begin</p>
-        <p><i id="play-button" class="fas fa-play"></i></p>
-        <p>play music</p>
-      </div>
-    </div>
-
-    <div class="container-fluid d-lg-none">
-      <div class="d-flex flex-column justify-content-center" id="landing">
-        <h1 class="heading">Grays</h1>
-        <p>An advocacy of the non-binary</p>
+        <p class="d-none d-lg-block">scroll to begin</p>
+        <h1 class="heading d-lg-none">Grays</h1>
+        <p class="d-lg-none">An advocacy of the non-binary</p>
         <p><i id="play-button" class="fas fa-play"></i></p>
         <p>play music</p>
       </div>
     </div>
 
     <div class="container-fluid">
-      <div class="d-flex flex-column d-none d-lg-block" id="frame-container">
+      <div class="d-none d-lg-block" id="frame-container">
         <div id="image-container"></div>
         <div id="text-container">
-          <h1 class="heading heading-white">Grays</h1>
-          <p class="subheading-white">An advocacy of the non-binary</p>
+          <h1 class="heading text-light">Grays</h1>
+          <p class="text-light">An advocacy of the non-binary</p>
         </div>
       </div>
 
-      <div class="d-flex flex-column align-items-center">
-        <div class="col-10 col-lg-4">
+      <div class="row">
+        <div class="offset-1 col-10 offset-lg-4 col-lg-4">
           <p class="block">
             "We are in charge of our perception of reality and that we hold the means to create, reinforce, or alter that perceived reality."<br><br>
             -Lori Girshwick, author of "Transgender Voices"
@@ -112,11 +106,11 @@
     </div>
 
     <div class="container-fluid black-container">
-      <div class="d-flex flex-column align-items-center">
-        <div class="col-10 col-lg-4">
+      <div class="row">
+        <div class="offset-1 col-10 offset-lg-4 col-lg-4">
           <p class="block text-light">
             To start with, sex and gender are two separate concepts. Sex refers to your biological anatomy, and gender is an inner sense of identity that is subjective and personal to each individual.<br><br><br>
-            To help you understand a little more about gender, and about yourself, let me ask you a few block2s.<br><br><br>
+            To help you understand a little more about gender, and about yourself, let me ask you a few blocks.<br><br><br>
             Please answer them as accurately as you can.
           </p>
         </div>
@@ -125,19 +119,20 @@
 
     <div class="container-fluid black-container">
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="text-light pe-3 ms-auto">biological sex<br>#1</small>
         </div>
-        <div class="col-10 col-lg-4 line-white">
-          <p class="block2 text-light px-3">
-            How masculine is the body that you were born in?
-          </p>
-          <div class="d-flex flex-row justify-content-center gap-3 options">
-            <button class="btn btn-sm btn-outline-light px-3 sex-male"><a href="#sex-ques2">0.0</a></button>
-            <button class="btn btn-sm btn-outline-light px-3 sex-male"><a href="#sex-ques2">0.25</a></button>
-            <button class="btn btn-sm btn-outline-light px-3 sex-male"><a href="#sex-ques2">0.5</a></button>
-            <button class="btn btn-sm btn-outline-light px-3 sex-male"><a href="#sex-ques2">1.0</a></button>
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-light">
+          <div class="block">
+            <p class="text-light px-3 pb-3">
+              How masculine is the body that you were born in?
+            </p>
+            <div class="d-flex flex-row justify-content-center gap-3">
+              <a href="#sex-ques2"><button class="btn btn-sm btn-outline-light px-3 sex-male">0.0</button></a>
+              <a href="#sex-ques2"><button class="btn btn-sm btn-outline-light px-3 sex-male">0.25</button></a>
+              <a href="#sex-ques2"><button class="btn btn-sm btn-outline-light px-3 sex-male">0.5</button></a>
+              <a href="#sex-ques2"><button class="btn btn-sm btn-outline-light px-3 sex-male">1.0</button></a>
+            </div>
           </div>
         </div>
       </div>
@@ -145,19 +140,20 @@
 
     <div class="container-fluid d-none" id="sex-ques2">
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto">biological sex<br>#2</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
-          <p class="block2 px-3">
-            How feminine is the body that you were born in?
-          </p>
-          <div class="d-flex flex-row justify-content-center gap-3 options">
-            <button class="btn btn-sm btn-outline-dark px-3 sex-female"><a href="#id-ques1">0.0</a></button>
-            <button class="btn btn-sm btn-outline-dark px-3 sex-female"><a href="#id-ques1">0.25</a></button>
-            <button class="btn btn-sm btn-outline-dark px-3 sex-female"><a href="#id-ques1">0.5</a></button>
-            <button class="btn btn-sm btn-outline-dark px-3 sex-female"><a href="#id-ques1">1.0</a></button>
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
+          <div class="block">
+            <p class="px-3 pb-3">
+              How feminine is the body that you were born in?
+            </p>
+            <div class="d-flex flex-row justify-content-center gap-3">
+              <a href="#id-ques1"><button class="btn btn-sm btn-outline-dark px-3 sex-female">0.0</button></a>
+              <a href="#id-ques1"><button class="btn btn-sm btn-outline-dark px-3 sex-female">0.25</button></a>
+              <a href="#id-ques1"><button class="btn btn-sm btn-outline-dark px-3 sex-female">0.5</button></a>
+              <a href="#id-ques1"><button class="btn btn-sm btn-outline-dark px-3 sex-female">1.0</button></a>
+            </div>
           </div>
         </div>
       </div>
@@ -165,17 +161,18 @@
 
     <div class="container-fluid d-none" id="id-ques1">
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto">gender identity<br>#1</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
-          <p class="block2 px-3">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
+          <div class="block">
+            <p class="px-3 pb-3">
 
-          </p>
-          <div class="d-flex flex-row justify-content-center gap-3 options">
-            <button class="btn btn-sm btn-outline-dark px-3 id-1"><a href="#id-ques2">yes / sometimes</a></button>
-            <button class="btn btn-sm btn-outline-dark px-3 id-1"><a href="#id-ques2">no</a></button>
+            </p>
+            <div class="d-flex flex-row justify-content-center gap-3">
+              <a href="#id-ques2"><button class="btn btn-sm btn-outline-dark px-3 id-1">yes / sometimes</button></a>
+              <a href="#id-ques2"><button class="btn btn-sm btn-outline-dark px-3 id-1">no</button></a>
+            </div>
           </div>
         </div>
       </div>
@@ -183,17 +180,18 @@
 
     <div class="container-fluid d-none" id="id-ques2">
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto">gender identity<br>#2</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
-          <p class="block2 px-3">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
+          <div class="block">
+            <p class="px-3 pb-3">
 
-          </p>
-          <div class="d-flex flex-row justify-content-center gap-3 options">
-            <button class="btn btn-sm btn-outline-dark px-3 id-2"><a href="#id-ques3">yes / sometimes</a></button>
-            <button class="btn btn-sm btn-outline-dark px-3 id-2"><a href="#id-ques3">no</a></button>
+            </p>
+            <div class="d-flex flex-row justify-content-center gap-3">
+              <a href="#id-ques3"><button class="btn btn-sm btn-outline-dark px-3 id-2">yes / sometimes</button></a>
+              <a href="#id-ques3"><button class="btn btn-sm btn-outline-dark px-3 id-2">no</button></a>
+            </div>
           </div>
         </div>
       </div>
@@ -201,17 +199,18 @@
 
     <div class="container-fluid d-none" id="id-ques3">
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto">gender identity<br>#3</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
-          <p class="block2 px-3">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
+          <div class="block">
+            <p class="px-3 pb-3">
 
-          </p>
-          <div class="d-flex flex-row justify-content-center gap-3 options">
-            <button class="btn btn-sm btn-outline-dark px-3 id-3"><a href="#id-ques4">yes / sometimes</a></button>
-            <button class="btn btn-sm btn-outline-dark px-3 id-3"><a href="#id-ques4">no</a></button>
+            </p>
+            <div class="d-flex flex-row justify-content-center gap-3">
+              <a href="#id-ques4"><button class="btn btn-sm btn-outline-dark px-3 id-3">yes / sometimes</button></a>
+              <a href="#id-ques4"><button class="btn btn-sm btn-outline-dark px-3 id-3">no</button></a>
+            </div>
           </div>
         </div>
       </div>
@@ -219,19 +218,20 @@
 
     <div class="container-fluid d-none" id="id-ques4">
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto">gender identity<br>#4</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
-          <p class="block2 px-3">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
+          <div class="block">
+            <p class="px-3 pb-3">
 
-          </p>
-          <div class="d-flex flex-row justify-content-center gap-3 options">
-            <button class="btn btn-sm btn-outline-dark px-3 id-4"><a href="#id-ques5">masculine</a></button>
-            <button class="btn btn-sm btn-outline-dark px-3 id-4"><a href="#id-ques5">feminine</a></button>
-            <button class="btn btn-sm btn-outline-dark px-3 id-4"><a href="#id-ques5">both</a></button>
-            <button class="btn btn-sm btn-outline-dark px-3 id-4"><a href="#id-ques5">neither</a></button>
+            </p>
+            <div class="d-flex flex-row justify-content-center gap-3">
+              <a href="#id-ques5"><button class="btn btn-sm btn-outline-dark px-3 id-4">masculine</button></a>
+              <a href="#id-ques5"><button class="btn btn-sm btn-outline-dark px-3 id-4">feminine</button></a>
+              <a href="#id-ques5"><button class="btn btn-sm btn-outline-dark px-3 id-4">both</button></a>
+              <a href="#id-ques5"><button class="btn btn-sm btn-outline-dark px-3 id-4">neither</button></a>
+            </div>
           </div>
         </div>
       </div>
@@ -239,17 +239,18 @@
 
     <div class="container-fluid d-none" id="id-ques5">
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto">gender identity<br>#5</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
-          <p class="block2 px-3">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
+          <div class="block">
+            <p class="px-3 pb-3">
 
-          </p>
-          <div class="d-flex flex-row justify-content-center gap-3 options">
-            <button class="btn btn-sm btn-outline-dark px-3 id-5"><a href="#exp-ques1">yes</a></button>
-            <button class="btn btn-sm btn-outline-dark px-3 id-5"><a href="#exp-ques1">no</a></button>
+            </p>
+            <div class="d-flex flex-row justify-content-center gap-3">
+              <a href="#exp-ques1"><button class="btn btn-sm btn-outline-dark px-3 id-5">yes</button></a>
+              <a href="#exp-ques1"><button class="btn btn-sm btn-outline-dark px-3 id-5">no</button></a>
+            </div>
           </div>
         </div>
       </div>
@@ -257,42 +258,41 @@
 
     <div class="container-fluid black-container d-none" id="exp-ques1">
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
-          <small class="pe-3 ms-auto text-light">gender expression<br>#1</small>
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
+          <small class="text-light pe-3 ms-auto">gender expression<br>#1</small>
         </div>
-        <div class="col-10 col-lg-4 line-white">
-          <p class="block2 text-light px-3">
-            In an ideal safe environment, how would you choose to express your identity? Think of: speech / clothing / grooming / etc.
-          </p>
-          <div class="d-flex flex-row justify-content-center gap-3 options">
-            <button class="btn btn-sm btn-outline-light px-3 exp-1"><a href="#result">masculine</a></button>
-            <button class="btn btn-sm btn-outline-light px-3 exp-1"><a href="#result">feminine</a></button>
-            <button class="btn btn-sm btn-outline-light px-3 exp-1"><a href="#result">both</a></button>
-            <button class="btn btn-sm btn-outline-light px-3 exp-1"><a href="#result">neither</a></button>
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-light">
+          <div class="block">
+            <p class="text-light px-3 pb-3">
+              In an ideal safe environment, how would you choose to express your identity? Think of: speech / clothing / grooming / etc.
+            </p>
+            <div class="d-flex flex-row justify-content-center gap-3">
+              <a href="#result"><button class="btn btn-sm btn-outline-light px-3 exp-1">masculine</button></a>
+              <a href="#result"><button class="btn btn-sm btn-outline-light px-3 exp-1">feminine</button></a>
+              <a href="#result"><button class="btn btn-sm btn-outline-light px-3 exp-1">both</button></a>
+              <a href="#result"><button class="btn btn-sm btn-outline-light px-3 exp-1">neither</button></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid d-none" id="result">
-      <div class="d-flex flex-column align-items-center">
-        <div class="col-10 col-lg-4">
-          <p class="block2">your result: </p>
+    <div class="container-fluid" id="result">
+      <div class="row">
+        <div class="offset-1 col-10 offset-lg-4 col-lg-4">
+          <p class="block pb-3">your result: </p>
           <h1 class="heading"></h1>
           <p></p>
-          <li class="list"></li>
-          <li class="list"></li>
-          <li class="list"></li>
-          <p class="block3">
-            Your results show you a 7-digit combination of 0’s and 1’s that represents your likely: <u>biological sex</u> (anatomical attributes), <u>gender identity</u> (internal sense of gender), and <u>gender expression</u> (external
-            manifestation of that identity).<br><br><br>
-            We’ve all been told that there are only two options: man or woman, but you must've gotten a fair idea by now that those aren’t the only options.<br><br><br>
-            There’s an amalgam of multiple identities and expressions that give rise to diversity and several possibilities on the wide spectrums of sex and gender.
+          <li class="py-4"></li>
+          <li class="py-4"></li>
+          <li class="py-4"></li>
+          <p class="block">
+            Your results show you a 7-digit combination of 0’s and 1’s that represents your likely: <u>biological sex</u> (anatomical attributes), <u>gender identity</u> (internal sense of gender), and <u>gender expression</u> (external manifestation
+            of that identity).
           </p>
-          <p class="block2">
+          <p class="block">
             If the first digit stood for the presence of male biological traits in the body, and the second digit stood for the presence of female biological traits in the body (with the value 1 signifying yes or true, and the value 0 signifying no
-            or false) we can map four possibilities on a chart like this:
+            or false) we can plot four possibilities on a chart like this:
           </p>
           <div class="d-flex flex-row justify-content-center gap-4">
             <div class="col col-lg-6">
@@ -325,9 +325,8 @@
               <li class="text-start small">11 : intersex</li>
             </div>
           </div>
-          <p class="block2">
-            For gender identity, similarly, the first two digits stand for the presence of masculinity & femininity, but let us also assume there's a third digit that stands for fluidity (the feeling of fluctuation or fluidity between more than one
-            genders). We can map all the eight possibilites across a chart that looks like this:
+          <p class="block">
+            Similarly, for gender identity, the first two digits stand for the presence of masculinity & femininity in the identity, but let us also assume that there's a third digit that stands for fluidity (the feeling of fluctuation or fluidity between more than one genders). We can then plot all the eight possibilites across a chart that looks like this:
           </p>
           <div class="d-flex flex-row justify-content-center gap-4">
             <div class="col col-lg-6">
@@ -374,8 +373,8 @@
               <li class="text-start small">111 : genderfluid</li>
             </div>
           </div>
-          <p class="block2">
-            Taking all these possibilities (biological sex across x, and gender identity across y), we end up with a chart much bigger—one that contains wider variation and accounts for an extensive range beyond the cisnormative binary.
+          <p class="block">
+            Taking all these possibilities (biological sex across x, and gender identity across y), we end up with a chart that contains wider variation and accounts for an extensive range beyond the cisnormative binary.
           </p>
           <table class="table table-bordered">
             <thead>
@@ -446,8 +445,8 @@
               </tr>
             </tbody>
           </table>
-          <p class="block2">
-            Furthermore, once we add four more possibilities of gender expression:
+          <p class="block">
+            Furthermore, we can plot the four possibilities of gender expression:
           </p>
           <div class="d-flex flex-row justify-content-center gap-4">
             <div class="col col-lg-6">
@@ -480,16 +479,17 @@
               <li class="text-start small">11 : androgynous</li>
             </div>
           </div>
-          <p class="block2">
-            Aggregating all of the above, we get a 3-dimensional matrix with a total of 128 different ways of identitifying and expressing our genders and bodies. (<span id="toggle-matrix" class="text-decoration-underline">hide matrix</span>)
+          <p class="block">
+            Aggregating all of the above, we get a 3-dimensional matrix with a total of 128 different ways of identitifying and expressing our genders and bodies. Drag the matrix to explore it. (<span id="toggle-matrix" class="text-decoration-underline">hide matrix</span>)
           </p>
         </div>
-        <div class="col-12 col-lg-10" id="matrix">
-          <x3d width="100%" height="70vh">
+        <div class="col-12 offset-lg-3 col-lg-6" id="matrix">
+          <x3d width="100%" height="80vh">
             <scene>
-              <Viewpoint position="-1, 0, 12" centerOfRotation="0, 0, 0"></Viewpoint>
+              <Viewpoint position="-1, 0, 13" centerOfRotation="0, 0, 0"></Viewpoint>
+
               <!-- face 1 row 1-->
-              <transform translation="-8 3 0">
+              <transform translation="-4 4 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0000000.png"></ImageTexture>
@@ -498,7 +498,7 @@
                 </shape>
               </transform>
 
-              <transform translation="-6 3 0">
+              <transform translation="-2 4 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0000100.png"></ImageTexture>
@@ -507,7 +507,7 @@
                 </shape>
               </transform>
 
-              <transform translation="-4 3 0">
+              <transform translation="0 4 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0001000.png"></ImageTexture>
@@ -516,7 +516,7 @@
                 </shape>
               </transform>
 
-              <transform translation="-2 3 0">
+              <transform translation="2 4 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0001100.png"></ImageTexture>
@@ -525,7 +525,8 @@
                 </shape>
               </transform>
 
-              <transform translation="0 3 0">
+              <!-- face 1 row 2-->
+              <transform translation="-4 3 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0010000.png"></ImageTexture>
@@ -534,7 +535,7 @@
                 </shape>
               </transform>
 
-              <transform translation="2 3 0">
+              <transform translation="-2 3 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0010100.png"></ImageTexture>
@@ -543,7 +544,7 @@
                 </shape>
               </transform>
 
-              <transform translation="4 3 0">
+              <transform translation="0 3 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0011000.png"></ImageTexture>
@@ -552,7 +553,7 @@
                 </shape>
               </transform>
 
-              <transform translation="6 3 0">
+              <transform translation="2 3 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0011100.png"></ImageTexture>
@@ -561,8 +562,8 @@
                 </shape>
               </transform>
 
-              <!-- face 1 row 2-->
-              <transform translation="-8 2 0">
+              <!-- face 1 row 3-->
+              <transform translation="-4 2 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0100000.png"></ImageTexture>
@@ -571,7 +572,7 @@
                 </shape>
               </transform>
 
-              <transform translation="-6 2 0">
+              <transform translation="-2 2 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0100100.png"></ImageTexture>
@@ -580,7 +581,7 @@
                 </shape>
               </transform>
 
-              <transform translation="-4 2 0">
+              <transform translation="0 2 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0101000.png"></ImageTexture>
@@ -589,7 +590,7 @@
                 </shape>
               </transform>
 
-              <transform translation="-2 2 0">
+              <transform translation="2 2 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0101100.png"></ImageTexture>
@@ -598,7 +599,8 @@
                 </shape>
               </transform>
 
-              <transform translation="0 2 0">
+              <!-- face 1 row 4-->
+              <transform translation="-4 1 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0110000.png"></ImageTexture>
@@ -607,7 +609,7 @@
                 </shape>
               </transform>
 
-              <transform translation="2 2 0">
+              <transform translation="-2 1 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0110100.png"></ImageTexture>
@@ -616,7 +618,7 @@
                 </shape>
               </transform>
 
-              <transform translation="4 2 0">
+              <transform translation="0 1 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0111000.png"></ImageTexture>
@@ -625,7 +627,7 @@
                 </shape>
               </transform>
 
-              <transform translation="6 2 0">
+              <transform translation="2 1 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0111100.png"></ImageTexture>
@@ -634,8 +636,8 @@
                 </shape>
               </transform>
 
-              <!-- face 1 row 3-->
-              <transform translation="-8 1 0">
+              <!-- face 1 row 5-->
+              <transform translation="-4 0 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1000000.png"></ImageTexture>
@@ -644,7 +646,7 @@
                 </shape>
               </transform>
 
-              <transform translation="-6 1 0">
+              <transform translation="-2 0 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1000100.png"></ImageTexture>
@@ -653,7 +655,7 @@
                 </shape>
               </transform>
 
-              <transform translation="-4 1 0">
+              <transform translation="0 0 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1001000.png"></ImageTexture>
@@ -662,7 +664,7 @@
                 </shape>
               </transform>
 
-              <transform translation="-2 1 0">
+              <transform translation="2 0 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1001100.png"></ImageTexture>
@@ -671,7 +673,8 @@
                 </shape>
               </transform>
 
-              <transform translation="0 1 0">
+              <!-- face 1 row 6-->
+              <transform translation="-4 -1 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1010000.png"></ImageTexture>
@@ -680,7 +683,7 @@
                 </shape>
               </transform>
 
-              <transform translation="2 1 0">
+              <transform translation="-2 -1 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1010100.png"></ImageTexture>
@@ -689,7 +692,7 @@
                 </shape>
               </transform>
 
-              <transform translation="4 1 0">
+              <transform translation="0 -1 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1011000.png"></ImageTexture>
@@ -698,7 +701,7 @@
                 </shape>
               </transform>
 
-              <transform translation="6 1 0">
+              <transform translation="2 -1 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1011100.png"></ImageTexture>
@@ -707,8 +710,8 @@
                 </shape>
               </transform>
 
-              <!-- face 1 row 4-->
-              <transform translation="-8 0 0">
+              <!-- face 1 row 7-->
+              <transform translation="-4 -2 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1100000.png"></ImageTexture>
@@ -717,7 +720,7 @@
                 </shape>
               </transform>
 
-              <transform translation="-6 0 0">
+              <transform translation="-2 -2 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1100100.png"></ImageTexture>
@@ -726,7 +729,7 @@
                 </shape>
               </transform>
 
-              <transform translation="-4 0 0">
+              <transform translation="0 -2 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1101000.png"></ImageTexture>
@@ -735,7 +738,7 @@
                 </shape>
               </transform>
 
-              <transform translation="-2 0 0">
+              <transform translation="2 -2 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1101100.png"></ImageTexture>
@@ -744,7 +747,8 @@
                 </shape>
               </transform>
 
-              <transform translation="0 0 0">
+              <!-- face 1 row 8-->
+              <transform translation="-4 -3 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1110000.png"></ImageTexture>
@@ -753,7 +757,7 @@
                 </shape>
               </transform>
 
-              <transform translation="2 0 0">
+              <transform translation="-2 -3 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1110100.png"></ImageTexture>
@@ -762,7 +766,7 @@
                 </shape>
               </transform>
 
-              <transform translation="4 0 0">
+              <transform translation="0 -3 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1111000.png"></ImageTexture>
@@ -771,7 +775,7 @@
                 </shape>
               </transform>
 
-              <transform translation="6 0 0">
+              <transform translation="2 -3 0">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1111100.png"></ImageTexture>
@@ -781,878 +785,890 @@
               </transform>
 
               <!-- face 2 row 1-->
-              <transform translation="-8 3 -1">
+              <transform translation="-4 4 -1">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0000001.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
-              <transform translation="-6 3 -1">
+              <transform translation="-2 4 -1">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0000101.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
-              <transform translation="-4 3 -1">
+              <transform translation="0 4 -1">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0001001.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="2 4 -1">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/0001101.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <!-- face 2 row 2-->
+              <transform translation="-4 3 -1">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/0010001.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="-2 3 -1">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/0001101.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0010101.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="0 3 -1">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/0010001.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0011001.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="2 3 -1">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/0010101.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="4 3 -1">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/0011001.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="6 3 -1">
-                <shape>
-                  <appearance>
                     <ImageTexture url="images/matrix/0011101.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
-              <!-- face 2 row 2-->
-              <transform translation="-8 2 -1">
+              <!-- face 2 row 3-->
+              <transform translation="-4 2 -1">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0100001.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="-6 2 -1">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/0100101.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="-4 2 -1">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/0101001.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="-2 2 -1">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/0101101.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0100101.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="0 2 -1">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/0110001.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0101001.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="2 2 -1">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/0110101.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0101101.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
-              <transform translation="4 2 -1">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/0111001.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="6 2 -1">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/0111101.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <!-- face 2 row 3-->
-              <transform translation="-8 1 -1">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/1000001.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="-6 1 -1">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/1000101.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
+              <!-- face 2 row 4-->
               <transform translation="-4 1 -1">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1001001.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0110001.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="-2 1 -1">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1001101.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0110101.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="0 1 -1">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1010001.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0111001.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="2 1 -1">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1010101.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0111101.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
-              <transform translation="4 1 -1">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/1011001.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="6 1 -1">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/1011101.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <!-- face 2 row 4-->
-              <transform translation="-8 0 -1">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/1100001.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="-6 0 -1">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/1100101.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
+              <!-- face 2 row 5-->
               <transform translation="-4 0 -1">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1101001.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/1000001.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="-2 0 -1">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1101101.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/1000101.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="0 0 -1">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1110001.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/1001001.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="2 0 -1">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1110101.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/1001101.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
-              <transform translation="4 0 -1">
+              <!-- face 2 row 6-->
+              <transform translation="-4 -1 -1">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1010001.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="-2 -1 -1">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1010101.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="0 -1 -1">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1011001.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="2 -1 -1">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1011101.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <!-- face 2 row 7-->
+              <transform translation="-4 -2 -1">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1100001.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="-2 -2 -1">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1100101.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="0 -2 -1">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1101001.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="2 -2 -1">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1101101.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <!-- face 2 row 8-->
+              <transform translation="-4 -3 -1">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1110001.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="-2 -3 -1">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1110101.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="0 -3 -1">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1111001.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
-              <transform translation="6 0 -1">
+              <transform translation="2 -3 -1">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1111101.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <!-- face 3 row 1-->
-              <transform translation="-8 3 -2">
+              <transform translation="-4 4 -2">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0000010.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
-              <transform translation="-6 3 -2">
+              <transform translation="-2 4 -2">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0000110.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
-              <transform translation="-4 3 -2">
+              <transform translation="0 4 -2">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0001010.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="2 4 -2">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/0001110.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <!-- face 3 row 2-->
+              <transform translation="-4 3 -2">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/0010010.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="-2 3 -2">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/0001110.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0010110.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="0 3 -2">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/0010010.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0011010.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="2 3 -2">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/0010110.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="4 3 -2">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/0011010.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="6 3 -2">
-                <shape>
-                  <appearance>
                     <ImageTexture url="images/matrix/0011110.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
-              <!-- face 3 row 2-->
-              <transform translation="-8 2 -2">
+              <!-- face 3 row 3-->
+              <transform translation="-4 2 -2">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0100010.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="-6 2 -2">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/0100110.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="-4 2 -2">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/0101010.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="-2 2 -2">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/0101110.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0100110.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="0 2 -2">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/0110010.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0101010.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="2 2 -2">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/0110110.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0101110.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
-              <transform translation="4 2 -2">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/0111010.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="6 2 -2">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/0111110.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <!-- face 3 row 3-->
-              <transform translation="-8 1 -2">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/1000010.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="-6 1 -2">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/1000110.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
+              <!-- face 3 row 4-->
               <transform translation="-4 1 -2">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1001010.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0110010.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="-2 1 -2">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1001110.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0110110.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="0 1 -2">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1010010.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0111010.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="2 1 -2">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1010110.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0111110.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
-              <transform translation="4 1 -2">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/1011010.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="6 1 -2">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/1011110.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <!-- face 3 row 4-->
-              <transform translation="-8 0 -2">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/1100010.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="-6 0 -2">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/1100110.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
+              <!-- face 3 row 5-->
               <transform translation="-4 0 -2">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1101010.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/1000010.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="-2 0 -2">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1101110.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/1000110.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="0 0 -2">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1110010.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/1001010.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="2 0 -2">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1110110.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/1001110.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
-              <transform translation="4 0 -2">
+              <!-- face 3 row 6-->
+              <transform translation="-4 -1 -2">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1010010.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="-2 -1 -2">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1010110.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="0 -1 -2">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1011010.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="2 -1 -2">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1011110.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <!-- face 3 row 7-->
+              <transform translation="-4 -2 -2">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1100010.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="-2 -2 -2">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1100110.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="0 -2 -2">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1101010.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="2 -2 -2">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1101110.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <!-- face 3 row 8-->
+              <transform translation="-4 -3 -2">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1110010.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="-2 -3 -2">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1110110.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="0 -3 -2">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1111010.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
-              <transform translation="6 0 -2">
+              <transform translation="2 -3 -2">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1111110.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <!-- face 4 row 1-->
-              <transform translation="-8 3 -3">
+              <transform translation="-4 4 -3">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0000011.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
-              <transform translation="-6 3 -3">
+              <transform translation="-2 4 -3">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0000111.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
-              <transform translation="-4 3 -3">
+              <transform translation="0 4 -3">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0001011.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="2 4 -3">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/0001111.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <!-- face 4 row 2-->
+              <transform translation="-4 3 -3">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/0010011.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="-2 3 -3">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/0001111.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0010111.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="0 3 -3">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/0010011.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0011011.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="2 3 -3">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/0010111.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="4 3 -3">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/0011011.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="6 3 -3">
-                <shape>
-                  <appearance>
                     <ImageTexture url="images/matrix/0011111.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
-              <!-- face 4 row 2-->
-              <transform translation="-8 2 -3">
+              <!-- face 4 row 3-->
+              <transform translation="-4 2 -3">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/0100011.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="-6 2 -3">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/0100111.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="-4 2 -3">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/0101011.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="-2 2 -3">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/0101111.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0100111.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="0 2 -3">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/0110011.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0101011.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="2 2 -3">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/0110111.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0101111.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
-              <transform translation="4 2 -3">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/0111011.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="6 2 -3">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/0111111.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <!-- face 4 row 3-->
-              <transform translation="-8 1 -3">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/1000011.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="-6 1 -3">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/1000111.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
+              <!-- face 4 row 4-->
               <transform translation="-4 1 -3">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1001011.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0110011.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="-2 1 -3">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1001111.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0110111.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="0 1 -3">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1010011.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0111011.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="2 1 -3">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1010111.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/0111111.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
-              <transform translation="4 1 -3">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/1011011.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="6 1 -3">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/1011111.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <!-- face 4 row 4-->
-              <transform translation="-8 0 -3">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/1100011.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
-              <transform translation="-6 0 -3">
-                <shape>
-                  <appearance>
-                    <ImageTexture url="images/matrix/1100111.png"></ImageTexture>
-                  </appearance>
-                  <box size="2,1,1"></box>
-                </shape>
-              </transform>
-
+              <!-- face 4 row 5-->
               <transform translation="-4 0 -3">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1101011.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/1000011.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="-2 0 -3">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1101111.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/1000111.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="0 0 -3">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1110011.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/1001011.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
               <transform translation="2 0 -3">
                 <shape>
                   <appearance>
-                    <ImageTexture url="images/matrix/1110111.png"></ImageTexture>
+                    <ImageTexture url="images/matrix/1001111.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
-              <transform translation="4 0 -3">
+              <!-- face 4 row 6-->
+              <transform translation="-4 -1 -3">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1010011.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="-2 -1 -3">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1010111.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="0 -1 -3">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1011011.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="2 -1 -3">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1011111.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <!-- face 4 row 7-->
+              <transform translation="-4 -2 -3">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1100011.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="-2 -2 -3">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1100111.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="0 -2 -3">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1101011.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="2 -2 -3">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1101111.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <!-- face 4 row 8-->
+              <transform translation="-4 -3 -3">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1110011.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="-2 -3 -3">
+                <shape>
+                  <appearance>
+                    <ImageTexture url="images/matrix/1110111.png"></ImageTexture>
+                  </appearance>
+                  <box size="2,1,-1"></box>
+                </shape>
+              </transform>
+
+              <transform translation="0 -3 -3">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1111011.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
-              <transform translation="6 0 -3">
+              <transform translation="2 -3 -3">
                 <shape>
                   <appearance>
                     <ImageTexture url="images/matrix/1111111.png"></ImageTexture>
                   </appearance>
-                  <box size="2,1,1"></box>
+                  <box size="2,1,-1"></box>
                 </shape>
               </transform>
 
@@ -1663,18 +1679,16 @@
     </div>
 
     <div class="container-fluid black-container d-none" id="conclusion">
-      <div class="d-flex flex-column align-items-center">
-        <div class="col-10 col-lg-4">
-          <p class="block2 text-light">
+      <div class="row">
+        <div class="offset-1 col-10 offset-lg-4 col-lg-4">
+          <p class="block text-light">
             There are numerous relationships a person can have to masculinity and femininity (both and neither), so many different ways we can identify and express ourselves.<br><br><br>
             This result doesn’t dictate your identity; only you have the power to do that. The intent is to bring to you the idea of an existence beyond the binary, and present to you countless possibilities of how you can identify and express your
-            gender regardless of the body you were born into.<br><br><br><br>
+            gender regardless of the body you were born into.<br><br><br>
+            To understand more about the terms used, view the <a id="show-glossary" class="text-light text-decoration-underline" href="#glossary">glossary</a><br><br><br><br>
             Created by :<br>
             <a class="text-light text-decoration-underline">Soumya Talwar</a><br>
             (a demiwoman, pronouns: she/they)
-          </p>
-          <p class="block2 text-light">
-            To understand more about the terms used, pay a visit to the <a id="show-glossary" class="text-light text-decoration-underline" href="#glossary">glossary</span>.
           </p>
         </div>
       </div>
@@ -1682,428 +1696,381 @@
 
     <div class="container-fluid d-none" id="glossary">
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Agender</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
-          <p class="d-lg-none text-decoration-underline">Agender</p>
-          <p class="block4 px-3">People who identify as agender may describe themselves as genderless, genderfree, or as someone who does not know or care about gender as an internal identity or an external label.</p>
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
+          <p class="d-lg-none text-decoration-underline pt-5">Agender</p>
+          <p class="block2 px-3">People who identify as agender may describe themselves as genderless, genderfree, or as someone who does not know or care about gender as an internal identity or an external label.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Androgyny</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Androgyny</p>
-          <p class="block4 px-3">A gender presentation that lies ambiguously between or combines the traditional masculine and feminine.</p>
+          <p class="block2 px-3">A gender presentation that lies ambiguously between or combines the traditional masculine and feminine.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Assigned Gender</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Assigned Gender</p>
-          <p class="block4 px-3">Assigned gender is the gender one is assigned at birth, typically on the basis of their birth genitalia from either one of the two primary binary genders most commonly used in western society: man and woman.</p>
+          <p class="block2 px-3">Assigned gender is the gender one is assigned at birth, typically on the basis of their birth genitalia from either one of the two primary binary genders most commonly used in western society: man and woman.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Assigned Sex</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Assigned Sex</p>
-          <p class="block4 px-3">The sex you were interpreted as at birth, which usually corresponds to the gender identity you were raised as and/or assumed to have in childhood. As a phrase, this is a way to refer to the sex that was put on your
-            birth certificate. In cultures with a gender binary, assigned sex is either male or female. Assigned sex is often referred to using the acronyms AFAB (Assigned Female At Birth) or AMAB (Assigned Male At Birth).</p>
+          <p class="block2 px-3">The sex you were interpreted as at birth, which usually corresponds to the gender identity you were raised as and/or assumed to have in childhood. As a phrase, this is a way to refer to the sex that was put on your birth certificate. In cultures with a gender binary, assigned sex is either male or female. Assigned sex is often referred to using the acronyms AFAB (Assigned Female At Birth) or AMAB (Assigned Male At Birth).</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Bigender</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Bigender</p>
-          <p class="block4 px-3">A person who experiences exactly two gender identities, either simultaneously or varying between the two. The person might experience the feeling of being a “man” and a “woman”, but could also include other non binary
-            identities.</p>
+          <p class="block2 px-3">A person who experiences exactly two gender identities, either simultaneously or varying between the two. The person might experience the feeling of being a “man” and a “woman”, but could also include other non binary identities.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Biological Sex</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Biological Sex</p>
-          <p class="block4 px-3">A medical term used to refer to the chromosomal, hormonal and anatomical characteristics that are used to classify an individual as female or male or intersex. Often referred to as simply “sex,” “physical sex,”
-            “anatomical sex,” or specifically as “sex assigned at birth.”</p>
+          <p class="block2 px-3">A medical term used to refer to the chromosomal, hormonal and anatomical characteristics that are used to classify an individual as female or male or intersex. Often referred to as simply “sex,” “physical sex,” “anatomical sex,” or specifically as “sex assigned at birth.”</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Cisgender</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Cisgender</p>
-          <p class="block4 px-3">A person whose gender identity and biological sex assigned at birth align (for example: somebody who was assigned male at birth and identifies as a man).</p>
+          <p class="block2 px-3">A person whose gender identity and biological sex assigned at birth align (for example: somebody who was assigned male at birth and identifies as a man).</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Cisnormativity</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Cisnormativity</p>
-          <p class="block4 px-3">The assumption, in individuals or in institutions, that everyone is cisgender, and that cisgender identities are superior to trans identities or people. Cisnormativity leads to invisibility of non-cisgender
-            identities.</p>
+          <p class="block2 px-3">The assumption, in individuals or in institutions, that everyone is cisgender, and that cisgender identities are superior to trans identities or people. Cisnormativity leads to invisibility of non-cisgender identities.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Demiboy</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Demiboy</p>
-          <p class="block4 px-3">A demiboy (also called a demiman or demimale person) is a gender identity describing someone who partially identifies as a man.</p>
+          <p class="block2 px-3">A demiboy (also called a demiman or demimale person) is a gender identity describing someone who partially identifies as a man.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Demigender</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Demigender</p>
-          <p class="block4 px-3">People who have a partial connection to a certain gender. This includes the partly female identity demigirl, and the partly male identity demiboy.</p>
+          <p class="block2 px-3">People who have a partial connection to a certain gender. This includes the partly female identity demigirl, and the partly male identity demiboy.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Demigirl</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Demigirl</p>
-          <p class="block4 px-3">Also called a demiwoman or a demifemale person, Demigirl is a gender identity describing someone who partially identifies as a woman.</p>
+          <p class="block2 px-3">Also called a demiwoman or a demifemale person, Demigirl is a gender identity describing someone who partially identifies as a woman.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Female</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Female</p>
-          <p class="block4 px-3">A female is often associated with female sex characteristics such as a vagina, a uterus, wide hips, breasts and a high-pitched voice.</p>
+          <p class="block2 px-3">A female is often associated with female sex characteristics such as a vagina, a uterus, wide hips, breasts and a high-pitched voice.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Feminine Expression</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Feminine Expression</p>
-          <p class="block4 px-3">Set of behaviours, presentations and roles which are culturally associated with being a woman and/or possessing female sex characteristics. Attributes which are often associated with femininity include grace,
-            delicacy, gentleness, passivity, nurturing instincts, a desire to care for others, and a gender expression which includes dresses or skirts, long hair and/or make-up.</p>
+          <p class="block2 px-3">Set of behaviours, presentations and roles which are culturally associated with being a woman and/or possessing female sex characteristics. Attributes which are often associated with femininity include grace, delicacy, gentleness, passivity, nurturing instincts, a desire to care for others, and a gender expression which includes dresses or skirts, long hair and/or make-up.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Gender Binary</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Gender Binary</p>
-          <p class="block4 px-3">The belief, prejudice or social force that claims only two genders exist—male and female—and that all non-binary and genderqueer gender identities are invalid.</p>
+          <p class="block2 px-3">The belief, prejudice or social force that claims only two genders exist—male and female—and that all non-binary and genderqueer gender identities are invalid.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Gender Conformation Surgery</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
-          <p class="d-lg-none text-decoration-underline">Gender Conformation Surgery</p>
-          <p class="block4 px-3">Surgery that alters a person’s appearance to better reflect their preferred gender presentation.</p>
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
+          <p class="d-lg-none text-decoration-underline">Gender Binary</p>
+          <p class="block2 px-3">Surgery that alters a person’s appearance to better reflect their preferred gender presentation.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Gender Dysphoria</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Gender Dysphoria</p>
-          <p class="block4 px-3">A feeling of discomfort, stress, confusion or negativity that is caused by a mismatch between one’s assigned sex and one’s actual gender, often accompanied by a strong desire to change one's sex to better match their
-            identity or to be called the correct gendered language.</p>
+          <p class="block2 px-3">A feeling of discomfort, stress, confusion or negativity that is caused by a mismatch between one’s assigned sex and one’s actual gender, often accompanied by a strong desire to change one's sex to better match their identity or to be called the correct gendered language.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Gender Expression</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Gender Expression</p>
-          <p class="block4 px-3">External manifestation of gender that is expressed through a person’s name, pronouns, clothing, behavior, and/or body characteristics.</p>
+          <p class="block2 px-3">External manifestation of gender that is expressed through a person’s name, pronouns, clothing, behavior, and/or body characteristics.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Gender Identity</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Gender Identity</p>
-          <p class="block4 px-3">A person’s internal, deeply held sense of their gender. Gender identity is an internal experience; it cannot be assigned, diagnosed, measured or disproved by anyone else. A person's gender identity is their own.</p>
+          <p class="block2 px-3">A person’s internal, deeply held sense of their gender. Gender identity is an internal experience; it cannot be assigned, diagnosed, measured or disproved by anyone else. A person's gender identity is their own.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Gender Presentation</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Gender Presentation</p>
-          <p class="block4 px-3">The way that a person’s gender superficially appears to onlookers, which may be affected by anatomy, clothing, makeup, hairstyle, speech patterns and body language.</p>
+          <p class="block2 px-3">The way that a person’s gender superficially appears to onlookers, which may be affected by anatomy, clothing, makeup, hairstyle, speech patterns and body language.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Gender Roles</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Gender Roles</p>
-          <p class="block4 px-3">Set of societal norms dictating the types of behaviors which are generally considered acceptable, appropriate, or desirable for people based on their assigned sex. Gender roles are usually centered on conceptions of
-            femininity and masculinity.</p>
+          <p class="block2 px-3">Set of societal norms dictating the types of behaviors which are generally considered acceptable, appropriate, or desirable for people based on their assigned sex. Gender roles are usually centered on conceptions of femininity and masculinity.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Genderfluid</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Genderfluid</p>
-          <p class="block4 px-3">A person who experiences different genders at different times, with different people and/or situations. They may at any time identify as a man, woman, agender, or any other non-binary identity, or even a combination
-            of identities.</p>
+          <p class="block2 px-3">A person who experiences different genders at different times, with different people and/or situations. They may at any time identify as a man, woman, agender, or any other non-binary identity, or even a combination of identities.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Genderqueer</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Genderqueer</p>
-          <p class="block4 px-3">An umbrella term with a similar meaning to non-binary. It can be used to describe any gender identities other than man and woman, thus outside of the gender binary.</p>
+          <p class="block2 px-3">An umbrella term with a similar meaning to non-binary. It can be used to describe any gender identities other than man and woman, thus outside of the gender binary.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Intersex</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Intersex</p>
-          <p class="block4 px-3">An intersex individual possesses a combination of chromosomes, gonads, hormones, internal sex organs, and genitals that that do not fit the traditional definition of male or female.</p>
+          <p class="block2 px-3">An intersex individual possesses a combination of chromosomes, gonads, hormones, internal sex organs, and genitals that that do not fit the traditional definition of male or female.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">LGBTQIA+</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">LGBTQIA+</p>
-          <p class="block4 px-3">Lesbian, gay, bisexual, transgender, and others. An acronym for the cultural and political community of people who are not heterosexual, hetero-romantic and cisgender. Sometimes expanded up to LGBT*QQIAUP+, in which
-            T* = all transgender, non-binary and genderqueer people; Q = queer/questioning; I = intersex; A = asexual; U = undecided; and P = pansexual.</p>
+          <p class="block2 px-3">Lesbian, gay, bisexual, transgender, and others. An acronym for the cultural and political community of people who are not heterosexual, hetero-romantic and cisgender. Sometimes expanded up to LGBT*QQIAUP+, in which T* = all transgender, non-binary and genderqueer people; Q = queer/questioning; I = intersex; A = asexual; U = undecided; and P = pansexual.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Male</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Male</p>
-          <p class="block4 px-3">A male is often associated with male sex characteristics such as a penis, testes, narrow hips, a prominent Adam's apple and a low-pitched voice.</p>
+          <p class="block2 px-3">A male is often associated with male sex characteristics such as a penis, testes, narrow hips, a prominent Adam's apple and a low-pitched voice.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Man</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Man</p>
-          <p class="block4 px-3">A gender identity that is part of the gender binary. Men may be cisgender (assigned male at birth and identifying as man) or transgender (assigned female at birth and identifying as man).</p>
+          <p class="block2 px-3">A gender identity that is part of the gender binary. Men may be cisgender (assigned male at birth and identifying as man) or transgender (assigned female at birth and identifying as man).</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Masculine Expression</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Masculine Expression</p>
-          <p class="block4 px-3">Set of behaviours, presentations and expression which are culturally associated with being a man and/or possessing male sex characteristics. Attributes which are often associated with masculinity include physical
-            strength, power, assertiveness, aggression, social independence and a gender expression which includes trousers, short hair and/or visible musculature.</p>
+          <p class="block2 px-3">Set of behaviours, presentations and expression which are culturally associated with being a man and/or possessing male sex characteristics. Attributes which are often associated with masculinity include physical strength, power, assertiveness, aggression, social independence and a gender expression which includes trousers, short hair and/or visible musculature.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Multigender</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Multigender</p>
-          <p class="block4 px-3">A term for anyone who experiences more than one gender identity. It can be used as a gender identity in its own right, or can be an umbrella term for other identities which fit this description. Multigender identities
+          <p class="block2 px-3">A term for anyone who experiences more than one gender identity. It can be used as a gender identity in its own right, or can be an umbrella term for other identities which fit this description. Multigender identities
             include bigender (two genders), trigender (three genders), quadgender (four genders), quintgender (five genders), polygender (many genders), pangender (all genders) and genderfluid (variable gender). Multigender people may experience two
             or more gender identities at the same time, or their gender identity may change over time (genderfluid). The gender identities they experience may be male, female, non-binary, or genderless.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Neutrois</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Neutrois</p>
-          <p class="block4 px-3">A non-binary gender identity which is often associated with a feeling of a 'neutral' or a 'null' gender that is neither masculine, feminine, nor anything in between, but still feeling strongly gendered.</p>
+          <p class="block2 px-3">A non-binary gender identity which is often associated with a feeling of a 'neutral' or a 'null' gender that is neither masculine, feminine, nor anything in between, but still feeling strongly gendered.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Non-Binary</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Non-Binary</p>
-          <p class="block4 px-3">Non-Binary describes any gender identity which does not fit the male and female binary. Those with non-binary genders can feel that they: have an androgynous (both masculine and feminine) gender identity, have an
+          <p class="block2 px-3">Non-Binary describes any gender identity which does not fit the male and female binary. Those with non-binary genders can feel that they: have an androgynous (both masculine and feminine) gender identity, have an
             identity between male and female, have a neutral or unrecognized gender identity, such as agender or neutrois, have multiple gender identities, such as bigender or pangender, have a gender identity which varies over time, known as
             genderfluid, have a weak or partial connection to a gender identity, known as demigender, are intersex and identify as intersex, known as amalgagender.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Pangender</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Pangender</p>
-          <p class="block4 px-3">The Greek prefix “pan” refers to “everything” or “all”. Pangender describes a person who experiences all genders. It is a non-binary gender identity which refers to a experiencing vast and diverse multiplicity of
+          <p class="block2 px-3">The Greek prefix “pan” refers to “everything” or “all”. Pangender describes a person who experiences all genders. It is a non-binary gender identity which refers to a experiencing vast and diverse multiplicity of
             genders in the same individual that can extend infinitely, always within the person's own culture and life experience. Pangender is very expansive and unspecific, it is feeling an entire infinite gender spectrum that is possible for an
             individual to have.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Pronouns</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Pronouns</p>
-          <p class="block4 px-3">A form of gendered language which refers to a person through words other than their name. Although some pronouns are traditionally associated with certain genders, anyone of any gender identity can use any pronouns.
+          <p class="block2 px-3">A form of gendered language which refers to a person through words other than their name. Although some pronouns are traditionally associated with certain genders, anyone of any gender identity can use any pronouns.
             Some examples include- She/her/hers, He/him/his, They/them/theirs, Ey/em/eirs, Xe/xem/xyrs, Ze/zir/zirs.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Questioning</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Questioning</p>
-          <p class="block4 px-3">An individual who or time when someone is unsure about or exploring their gender identity.</p>
+          <p class="block2 px-3">An individual who or time when someone is unsure about or exploring their gender identity.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Queer</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Queer</p>
-          <p class="block4 px-3">An umbrella term for anyone whose internal experience of gender does not match the gender they were assigned at birth (normally based on genitalia).</p>
+          <p class="block2 px-3">An umbrella term for anyone whose internal experience of gender does not match the gender they were assigned at birth (normally based on genitalia).</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Transition</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Transition</p>
-          <p class="block4 px-3">To change your presentation in order to reflect a gender different from the one assigned to you at birth either to be more congruent with the gender/sex you feel yourself to be and/or to be in harmony with your
+          <p class="block2 px-3">To change your presentation in order to reflect a gender different from the one assigned to you at birth either to be more congruent with the gender/sex you feel yourself to be and/or to be in harmony with your
             preferred gender expression. Transitioning may include, but does not require, any of the following: changing one’s pronouns, wearing different clothing than before, altering one’s legal gender, taking hormone therapy, and undergoing
             surgery.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Transphobia</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Transphobia</p>
-          <p class="block4 px-3">The fear of, discrimination against, or hatred of trans* people, the trans* community, or gender ambiguity.</p>
+          <p class="block2 px-3">The fear of, discrimination against, or hatred of trans* people, the trans* community, or gender ambiguity.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-lg-2"></div>
-        <div class="d-none d-lg-block col-lg-2 d-lg-flex flex-column justify-content-center">
+        <div class="d-none offset-lg-2 col-lg-2 d-lg-flex flex-column justify-content-center">
           <small class="pe-3 ms-auto text-end">Woman</small>
         </div>
-        <div class="col-10 col-lg-4 line-black">
+        <div class="offset-1 col-10 offset-lg-0 col-lg-4 border-start border-dark">
           <p class="d-lg-none text-decoration-underline">Woman</p>
-          <p class="block4 px-3">A gender identity which is part of the gender binary. Women may be cisgender (assigned female at birth and identifying as women) or transgender (assigned male at birth and identifying as women).</p>
+          <p class="block2 px-3">A gender identity which is part of the gender binary. Women may be cisgender (assigned female at birth and identifying as women) or transgender (assigned male at birth and identifying as women).</p>
         </div>
       </div>
     </div>

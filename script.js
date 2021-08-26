@@ -129,7 +129,7 @@ $(document).ready(() => {
   });
 
   $("a").each((index, link) => {
-    link.addEventListener("click", event => {
+    $(link).click(event => {
       if (link.hash !== "") {
         event.preventDefault();
         $("html, body").animate({
@@ -138,20 +138,20 @@ $(document).ready(() => {
           window.location.hash = link.hash;
         });
       }
-    }, true);
+    });
   });
 
   $(".sex-male").each((index, button) => {
-    button.addEventListener("click", event => {
-      $("#sex-ques2").removeClass("d-none");
-      $(".sex-male").removeClass("selected-white");
-      $(button).addClass("selected-white");
-      sex1 = index;
-    }, true);
+    $(button).click(event => {
+       $("#sex-ques2").removeClass("d-none");
+       $(".sex-male").removeClass("selected-white");
+       $(button).addClass("selected-white");
+       sex1 = index;
+     });
   });
 
   $(".sex-female").each((index, button) => {
-    button.addEventListener("click", event => {
+    $(button).click(event => {
       $("#id-ques1").removeClass("d-none");
       $(".sex-female").removeClass("selected-black");
       $(button).addClass("selected-black");
@@ -160,27 +160,27 @@ $(document).ready(() => {
       $("#id-ques1 p").text(getques(1));
       $("#id-ques2 p").text(getques(2));
       $("#id-ques3 p").text(getques(3));
-    }, true);
+     });
   });
 
   $(".id-1").each((index, button) => {
-    button.addEventListener("click", event => {
+    $(button).click(event => {
       $("#id-ques2").removeClass("d-none");
       $(".id-1").removeClass("selected-black");
       $(button).addClass("selected-black");
-    }, true);
+     });
   });
 
   $(".id-2").each((index, button) => {
-    button.addEventListener("click", event => {
+    $(button).click(event => {
       $("#id-ques3").removeClass("d-none");
       $(".id-2").removeClass("selected-black");
       $(button).addClass("selected-black");
-    }, true);
+     });
   });
 
   $(".id-3").each((index, button) => {
-    button.addEventListener("click", event => {
+    $(button).click(event => {
       $(".id-3").removeClass("selected-black");
       $(button).addClass("selected-black");
       if (index == 0) {
@@ -192,44 +192,41 @@ $(document).ready(() => {
         id = "woman";
         code.id = "010";
       }
-    }, true);
+     });
   });
 
   $(".id-4").each((index, button) => {
-    button.addEventListener("click", event => {
+    $(button).click(event => {
       $(".id-4").removeClass("selected-black");
       $(button).addClass("selected-black");
       choice = index;
       $("#id-ques5 p").text(getques(5)[choice]);
       $("#id-ques5").removeClass("d-none");
-    }, true);
+     });
   });
 
   $(".id-5").each((index, button) => {
-    button.addEventListener("click", event => {
+    $(button).click(event => {
       $(".id-5").removeClass("selected-black");
       $(button).addClass("selected-black");
       findid(index);
       $("#exp-ques1").removeClass("d-none");
-    }, true);
+     });
   });
 
   $(".exp-1").each((index, button) => {
-    button.addEventListener("click", event => {
+    $(button).click(event => {
       $(".exp-1").removeClass("selected-white");
       $(button).addClass("selected-white");
+      $("#result").removeClass("d-none");
       findexp(index);
       $("#result h1").text(code.sex + "," + code.id + "," + code.exp);
       $("#result p").eq(1).text(sex + ", " + id + ", " + exp);
-      let text1 = "<u>biological sex : " + code.sex + " (" + sex + ")</u><br><br>" + content.sex[sex];
-      $("#result li").eq(0).html(text1);
-      let text2 = "<u>gender identity : " + code.id + " (" + id + ")</u><br><br>" + content.id[id];
-      $("#result li").eq(1).html(text2);
-      let text3 = "<u>gender expression : " + code.exp + " (" + exp + ")</u><br><br>" + content.exp[exp];
-      $("#result li").eq(2).html(text3);
-      $("#result").removeClass("d-none");
+      $("#result li").eq(0).html("<u>biological sex : " + code.sex + " (" + sex + ")</u><br><br>" + content.sex[sex]);
+      $("#result li").eq(1).html("<u>gender identity : " + code.id + " (" + id + ")</u><br><br>" + content.id[id]);
+      $("#result li").eq(2).html("<u>gender expression : " + code.exp + " (" + exp + ")</u><br><br>" + content.exp[exp]);
       $("#conclusion").removeClass("d-none");
-    }, true);
+     });
   });
 
   let matrix = $("#matrix");
@@ -242,11 +239,10 @@ $(document).ready(() => {
     matrix.toggleClass(["d-none", "col-12", "col-lg-10"]);
   });
 
-  let button3 = document.getElementById("show-glossary");
-  console.log(button3);
-  button3.addEventListener("click", event => {
+  $("#show-glossary").click(event => {
     $("#glossary").removeClass("d-none");
-  }, true);
+    $("#scroll-top").removeClass("d-none");
+   });
 });
 
 function findsex() {
