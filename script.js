@@ -194,6 +194,7 @@ $(document).ready(() => {
         $("#id-ques4").removeClass("d-none");
       } else {
         $("#id-ques3 a").attr("href", "#exp-ques1");
+        $("#exp-ques1").removeClass("d-none");
         id = "woman";
         code.id = "010";
       }
