@@ -1,3 +1,8 @@
+var sex1, sex2, choice;
+var sex, id, exp;
+var code = {};
+var play = false;
+
 const frames = {
   1: "images/frames/frame 1.jpg",
   2: "images/frames/frame 2.jpg",
@@ -40,14 +45,8 @@ const frames = {
   39: "images/frames/frame 39.jpg",
   40: "images/frames/frame 40.jpg"
 };
-let play = false;
 
-var sex, id, exp;
-var code = {};
-var sex1, sex2, choice;
-var trans = false;
-
-var female = {
+const female = {
   1: "Have you felt uncomfortable in your body because of the suggestion it makes about your gender—your stature / voice / shape / genitalia / etc?",
   2: "Have you felt pressurized by others to be a 'proper' woman?",
   3: "Do you feel troubled by the thought of remaining a woman for the rest of your life?",
@@ -60,7 +59,7 @@ var female = {
   ]
 };
 
-var male = {
+const male = {
   1: "Have you felt uncomfortable in your body because of the suggestion it makes about your gender—your stature / voice / shape / genitalia / etc?",
   2: "Have you felt pressurized by others to be a 'proper' man?",
   3: "Do you feel troubled by the thought of remaining a man for the rest of your life?",
@@ -73,10 +72,10 @@ var male = {
   ]
 };
 
-var intersex = {
+const intersex = {
   1: "Have you felt uncomfortable in your body because of the suggestion it makes about your gender—your stature / voice / shape / genitalia / etc?",
-  2: "Have you felt pressurized by others to be a 'proper' man / woman?",
-  3: "Do you feel troubled by the thought of existing as both masculine & feminine for the rest of your life?",
+  2: "Have you felt pressurized by others to be a 'proper' man or woman?",
+  3: "Do you feel troubled by the thought of living as the gender assigned to you at birth for the rest of your life?",
   4: "Which of these gender spectrums feels the most natural and innate to you?",
   5: [
     "Do you sometimes feel detached from the concept of gender altogether?",
@@ -86,7 +85,7 @@ var intersex = {
   ]
 };
 
-var content = {
+const content = {
   "sex": {
     "female": "A female is often associated with sex characteristics such as a vagina, a uterus, wide hips, breasts and a high-pitched voice.",
     "male": "A male is often associated with sex characteristics such as a penis, testes, narrow hips, a prominent Adam's apple and a low-pitched voice.",
@@ -147,16 +146,16 @@ $(document).ready(() => {
   });
 
   $(".sex-male").each((index, button) => {
-    $(button).click(event => {
-       $("#sex-ques2").removeClass("d-none");
-       $(".sex-male").removeClass("active");
-       $(button).addClass("active");
-       sex1 = index;
-     });
+    $(button).click(() => {
+      $("#sex-ques2").removeClass("d-none");
+      $(".sex-male").removeClass("active");
+      $(button).addClass("active");
+      sex1 = index;
+    });
   });
 
   $(".sex-female").each((index, button) => {
-    $(button).click(event => {
+    $(button).click(() => {
       $("#id-ques1").removeClass("d-none");
       $(".sex-female").removeClass("active");
       $(button).addClass("active");
@@ -165,74 +164,66 @@ $(document).ready(() => {
       $("#id-ques1 p").text(getques(1));
       $("#id-ques2 p").text(getques(2));
       $("#id-ques3 p").text(getques(3));
-     });
+      $("#id-ques4 p").text(getques(4));
+    });
   });
 
   $(".id-1").each((index, button) => {
-    $(button).click(event => {
+    $(button).click(() => {
       $("#id-ques2").removeClass("d-none");
       $(".id-1").removeClass("active");
       $(button).addClass("active");
-     });
+    });
   });
 
   $(".id-2").each((index, button) => {
-    $(button).click(event => {
+    $(button).click(() => {
       $("#id-ques3").removeClass("d-none");
       $(".id-2").removeClass("active");
       $(button).addClass("active");
-     });
+    });
   });
 
   $(".id-3").each((index, button) => {
-    $(button).click(event => {
+    $(button).click(() => {
+      $("#id-ques4").removeClass("d-none");
       $(".id-3").removeClass("active");
       $(button).addClass("active");
-      if (index == 0) {
-        $("#id-ques3 a").attr("href", "#id-ques4");
-        $("#id-ques4 p").text(getques(4));
-        $("#id-ques4").removeClass("d-none");
-      } else {
-        $("#id-ques3 a").attr("href", "#exp-ques1");
-        $("#exp-ques1").removeClass("d-none");
-        id = "woman";
-        code.id = "010";
-      }
-     });
+    });
   });
 
   $(".id-4").each((index, button) => {
-    $(button).click(event => {
+    $(button).click(() => {
       $(".id-4").removeClass("active");
       $(button).addClass("active");
       choice = index;
       $("#id-ques5 p").text(getques(5)[choice]);
       $("#id-ques5").removeClass("d-none");
-     });
+    });
   });
 
   $(".id-5").each((index, button) => {
-    $(button).click(event => {
+    $(button).click(() => {
       $(".id-5").removeClass("active");
       $(button).addClass("active");
       findid(index);
       $("#exp-ques1").removeClass("d-none");
-     });
+    });
   });
 
   $(".exp-1").each((index, button) => {
-    $(button).click(event => {
+    $(button).click(() => {
       $(".exp-1").removeClass("active");
       $(button).addClass("active");
       $("#result").removeClass("d-none");
       findexp(index);
       $("#result h1").text(code.sex + "," + code.id + "," + code.exp);
       $("#result p").eq(1).text(sex + ", " + id + ", " + exp);
-      $("#result li").eq(0).html("<u>biological sex : " + code.sex + " (" + sex + ")</u><br><br>" + content.sex[sex]);
-      $("#result li").eq(1).html("<u>gender identity : " + code.id + " (" + id + ")</u><br><br>" + content.id[id]);
-      $("#result li").eq(2).html("<u>gender expression : " + code.exp + " (" + exp + ")</u><br><br>" + content.exp[exp]);
+      $("#result li").eq(0).html("<u>biological sex : " + sex + " (" + code.sex + ")</u><br><br>" + content.sex[sex]);
+      $("#result li").eq(1).html("<u>gender identity : " + id + " (" + code.id + ")</u><br><br>" + content.id[id]);
+      $("#result li").eq(2).html("<u>gender expression : " + exp + " (" + code.exp + ")</u><br><br>" + content.exp[exp]);
       $("#conclusion").removeClass("d-none");
-     });
+    });
   });
 
   let matrix = $("#matrix");
@@ -245,28 +236,24 @@ $(document).ready(() => {
     matrix.toggleClass(["d-none", "col-12", "col-lg-10"]);
   });
 
-  $("#show-glossary").click(event => {
+  $("#show-glossary").click(() => {
     $("#glossary").removeClass("d-none");
-   });
+  });
 });
 
 function findsex() {
-  if (sex1 == 0) {
-    if (sex2 > 1) {
-      sex = "female";
-      code.sex = "01";
-    }
-  } else if (sex2 == 0) {
-    if (sex1 > 1) {
-      sex = "male";
-      code.sex = "10";
-    }
+  if (sex1 == 0 && sex2 > 0) {
+    sex = "female";
+    code.sex = "01";
+  } else if (sex2 == 0 && sex1 > 0) {
+    sex = "male";
+    code.sex = "10";
+  } else if (sex1 > 0 && sex2 > 0) {
+    sex = "intersex";
+    code.sex = "11";
   } else {
-    result.sex = "intersex";
-    if (sex1 <= 1 && sex2 <= 1)
-      sex = "00";
-    else
-      code.sex = "11";
+    sex = "ambiguous";
+    code.sex = "11";
   }
 }
 
@@ -314,7 +301,7 @@ function findid(answer) {
         code.id = "000";
       } else {
         id = "neutrois";
-        code.id = "011";
+        code.id = "001";
       }
   }
 }
