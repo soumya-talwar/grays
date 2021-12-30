@@ -138,9 +138,7 @@ $(document).ready(() => {
         event.preventDefault();
         $("html, body").animate({
           scrollTop: $(link.hash).offset().top
-        }, 400, function() {
-          window.location.hash = link.hash;
-        });
+        }, 400);
       }
     });
   });
