@@ -246,11 +246,8 @@ function findsex() {
   } else if (sex2 == 0 && sex1 > 0) {
     sex = "male";
     code.sex = "10";
-  } else if (sex1 > 0 && sex2 > 0) {
-    sex = "intersex";
-    code.sex = "11";
   } else {
-    sex = "ambiguous";
+    sex = "intersex";
     code.sex = "11";
   }
 }
