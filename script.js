@@ -138,7 +138,10 @@ $(document).ready(() => {
         event.preventDefault();
         $("html, body").animate({
           scrollTop: $(link.hash).offset().top
-        }, 400);
+        }, 400, () => {
+          if ((/glossary/).test(link.hash))
+            window.location.hash = link.hash;
+        });
       }
     });
   });
