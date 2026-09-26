@@ -6,4 +6,4 @@ Grays is an interactive mathematical exploration of **128 non-binary genders**, 
 
 The project makes an intentionally ironic argument for possibilities beyond the gender binary: **using binary itself**. By representing different dimensions of gender through combinations of 0s and 1s, Grays takes a system built on two opposing states and uses it to imagine something far less black and white.
 
-**<a href="https://soumya-talwar.github.io/grays/" target="_blank">Visit Grays</a>**
+[**Visit Grays**](https://soumya-talwar.github.io/grays/)
