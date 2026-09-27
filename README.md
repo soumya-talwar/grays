@@ -1,6 +1,6 @@
 # GRAYS
 
-### An advocacy of the non-binary.
+### An advocacy of the non-binary
 
 Grays is an interactive mathematical exploration of **128 non-binary genders**, visualized in a 3-dimensional matrix.
 
